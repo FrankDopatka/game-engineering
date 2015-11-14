@@ -1,10 +1,10 @@
 package server;
-import ru.backend.BackendSpielAdmin;
+import ru.backend.server.BackendSpielAdmin;
 import ru.daten.D_OK;
 import ru.daten.Xml;
 
 public class Initialisierung {
-	private static String ladeSpiel="/home/informatik/Repository-RU/ru/RU-Backend/spiel01.wom";
+	private static String ladeSpiel="/home/dopatka02/Repo-GE/Game-Engineering/ru.spiel/spiel01.wom";
 	
 	public static void ausfuehren(){
 		BackendSpielAdmin administration=new BackendSpielAdmin();

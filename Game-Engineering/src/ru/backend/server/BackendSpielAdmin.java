@@ -1,7 +1,7 @@
-package ru.backend;
+package ru.backend.server;
 
-import ru.backend.BackendSpiel;
 import ru.backend.karte.Karte;
+import ru.backend.server.BackendSpiel;
 import ru.backend.spiel.Spiel;
 import ru.backend.spiel.Spieler;
 import ru.daten.D_Fehler;

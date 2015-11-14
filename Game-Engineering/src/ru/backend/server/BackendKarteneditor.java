@@ -1,4 +1,4 @@
-package ru.backend;
+package ru.backend.server;
 
 import ru.backend.Parameter;
 import ru.backend.karte.Feld;

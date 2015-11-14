@@ -161,22 +161,11 @@ public class ServerFrontend extends JFrame implements ActionListener{
 			try {
 				URI uri=UriBuilder.fromUri("http://"+jIP.getText()+"/").port(8000).build();
 		    System.out.println("Starte Server auf "+uri+"... ");	
-		    
-		    
+   
 		    //TODO
-		    
-		    
-		    String[] packages = {"ru.backend.BackendKarteneditor.class","ru.backend.BackendSpiel.class","ru.backend.BackendSpielAdmin.class"};
+		    String[] packages = {"ru.backend.server"};		    
 		    final ResourceConfig rc=new ResourceConfig().packages(packages); 
 
-		    
-//		    final ResourceConfig rc=new ResourceConfig().packages("backend"); 
-		    
-		    
-		    
-		    
-		    
-		    
 				server=GrizzlyHttpServerFactory.createHttpServer(uri,rc);
 				System.out.println("OK: Server laueft.");
 				System.out.println("Lade Startzustand ueber die Initialisierungsfunktion...");

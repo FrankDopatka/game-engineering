@@ -1,6 +1,6 @@
-package ru.backend;
-import ru.backend.BackendSpiel;
+package ru.backend.server;
 import ru.backend.karte.Feld;
+import ru.backend.server.BackendSpiel;
 import ru.backend.spiel.*;
 import ru.daten.*;
 import ru.interfaces.iBackendSpiel;

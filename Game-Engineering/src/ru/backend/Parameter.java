@@ -1,8 +1,8 @@
 package ru.backend;
 
 public class Parameter {
-	public static final String pfadKlassenKarten="backend.karte.karten.";
-	public static final String pfadKlassenFelder="backend.karte.felder.";
-	public static final String pfadKlassenEinheiten="backend.spiel.einheiten.";
-	public static final String pfadKlassenDaten="daten.";
+	public static final String pfadKlassenKarten="ru.backend.karte.karten.";
+	public static final String pfadKlassenFelder="ru.backend.karte.felder.";
+	public static final String pfadKlassenEinheiten="ru.backend.spiel.einheiten.";
+	public static final String pfadKlassenDaten="ru.daten.";
 }

@@ -1,7 +1,7 @@
 package ru.backend;
 
 
-import ru.backend.BackendSpielAdmin;
+import ru.backend.server.BackendSpielAdmin;
 import ru.daten.D_OK;
 import ru.daten.Xml;
 
