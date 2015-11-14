@@ -1,6 +1,7 @@
 package frontend;
 
-import interfaces.iBackendKarteneditor;
+import ru.daten.*;
+import ru.interfaces.iBackendKarteneditor;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -9,7 +10,6 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-import daten.*;
 import frontend.menu.MenuRechts;
 import frontend.menu.MenuRechts.AktionMenuRechts;
 

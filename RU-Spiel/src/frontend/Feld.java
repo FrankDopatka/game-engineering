@@ -9,7 +9,9 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import daten.*;
+import ru.daten.D_Einheit;
+import ru.daten.D_Feld;
+import ru.daten.D_Stadt;
 
 public class Feld extends JLabel{
 	private static final long serialVersionUID = 1L;

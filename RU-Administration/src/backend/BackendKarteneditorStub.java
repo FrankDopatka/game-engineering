@@ -1,11 +1,11 @@
 package backend;
 
-import interfaces.iBackendKarteneditor;
-
 import java.net.URLEncoder;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
+
+import ru.interfaces.iBackendKarteneditor;
 
 
 public class BackendKarteneditorStub implements iBackendKarteneditor{

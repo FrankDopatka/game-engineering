@@ -3,7 +3,13 @@ package frontend.menu;
 import frontend.Frontend;
 import frontend.Karte;
 import frontend.KarteEventHandler;
-import interfaces.iBackendKarteneditor;
+import ru.daten.D;
+import ru.daten.D_Fehler;
+import ru.daten.D_FeldArt;
+import ru.daten.D_Karte;
+import ru.daten.D_RessourcenArt;
+import ru.daten.Xml;
+import ru.interfaces.iBackendKarteneditor;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -19,13 +25,6 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
-
-import daten.D;
-import daten.D_Fehler;
-import daten.D_FeldArt;
-import daten.D_Karte;
-import daten.D_RessourcenArt;
-import daten.Xml;
 
 public class MenuRechts extends JPanel implements ActionListener{
 	private static final long serialVersionUID = 1L;

@@ -1,7 +1,11 @@
 package frontend;
 
 import frontend.menu.MenuTop;
-import interfaces.iBackendSpiel;
+import ru.daten.D;
+import ru.daten.D_Einheit;
+import ru.daten.D_Karte;
+import ru.daten.Xml;
+import ru.interfaces.iBackendSpiel;
 
 import java.awt.BorderLayout;
 import java.util.ArrayList;
@@ -11,10 +15,6 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
-import daten.D;
-import daten.D_Einheit;
-import daten.D_Karte;
-import daten.Xml;
 import backend.BackendSpielStub;
 
 public class Frontend extends JFrame{

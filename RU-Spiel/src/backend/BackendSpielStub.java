@@ -4,13 +4,12 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
-import interfaces.iBackendSpiel;
+import ru.daten.D;
+import ru.daten.Xml;
+import ru.interfaces.iBackendSpiel;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
-
-import daten.D;
-import daten.Xml;
 
 public class BackendSpielStub implements iBackendSpiel{
 	private static final boolean log=true;

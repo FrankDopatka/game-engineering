@@ -1,6 +1,11 @@
 package frontend.menu;
 
-import interfaces.iBackendSpielAdmin;
+import ru.daten.D;
+import ru.daten.D_OK;
+import ru.daten.D_SpielerNationArt;
+import ru.daten.D_SpielerRassenArt;
+import ru.daten.Xml;
+import ru.interfaces.iBackendSpielAdmin;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,11 +14,6 @@ import java.util.ArrayList;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
 
-import daten.D;
-import daten.D_OK;
-import daten.D_SpielerNationArt;
-import daten.D_SpielerRassenArt;
-import daten.Xml;
 import frontend.Frontend;
 
 public class FunktionenAdmin {

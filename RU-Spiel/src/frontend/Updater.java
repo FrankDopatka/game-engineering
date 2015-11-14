@@ -2,7 +2,14 @@ package frontend;
 
 import java.util.ArrayList;
 
-import daten.*;
+import ru.daten.D;
+import ru.daten.D_Einheit;
+import ru.daten.D_Fehler;
+import ru.daten.D_Feld;
+import ru.daten.D_OK;
+import ru.daten.D_Spiel;
+import ru.daten.D_Stadt;
+import ru.daten.Xml;
 
 public class Updater extends Thread{
 	private Frontend frontend;

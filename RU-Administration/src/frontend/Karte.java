@@ -1,6 +1,11 @@
 package frontend;
 
-import interfaces.iBackendKarteneditor;
+import ru.daten.D;
+import ru.daten.D_Feld;
+import ru.daten.D_FeldArt;
+import ru.daten.D_RessourcenArt;
+import ru.daten.Xml;
+import ru.interfaces.iBackendKarteneditor;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
@@ -13,12 +18,6 @@ import java.util.HashMap;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.Scrollable;
-
-import daten.D;
-import daten.D_Feld;
-import daten.D_FeldArt;
-import daten.D_RessourcenArt;
-import daten.Xml;
 
 public class Karte extends JPanel implements Scrollable{
 	private static final long serialVersionUID = 1L;

@@ -13,7 +13,11 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.Scrollable;
 
-import daten.*;
+import ru.daten.D;
+import ru.daten.D_Einheit;
+import ru.daten.D_Feld;
+import ru.daten.D_Karte;
+import ru.daten.D_Stadt;
 
 public class Karte extends JPanel implements Scrollable{
 	private static final long serialVersionUID = 1L;

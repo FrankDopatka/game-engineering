@@ -4,8 +4,11 @@ import frontend.menu.FunktionenAdmin;
 import frontend.menu.FunktionenKarteneditor;
 import frontend.menu.MenuRechts;
 import frontend.menu.MenuTop;
-import interfaces.iBackendKarteneditor;
-import interfaces.iBackendSpielAdmin;
+import ru.daten.D;
+import ru.daten.D_Karte;
+import ru.daten.Xml;
+import ru.interfaces.iBackendKarteneditor;
+import ru.interfaces.iBackendSpielAdmin;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
@@ -17,9 +20,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import daten.D;
-import daten.D_Karte;
-import daten.Xml;
 import backend.BackendKarteneditorStub;
 import backend.BackendSpielAdminStub;
 

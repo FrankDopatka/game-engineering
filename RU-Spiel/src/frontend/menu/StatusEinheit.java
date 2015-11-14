@@ -1,6 +1,10 @@
 package frontend.menu;
 
-import interfaces.iBackendSpiel;
+import ru.daten.D;
+import ru.daten.D_Einheit;
+import ru.daten.D_Spieler;
+import ru.daten.Xml;
+import ru.interfaces.iBackendSpiel;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -20,7 +24,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import daten.*;
 import frontend.Frontend;
 
 public class StatusEinheit extends JDialog implements ActionListener{

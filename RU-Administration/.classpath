@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="/RU-Backend/src/interfaces"/>
 	<classpathentry kind="lib" path="jars/jaxrs-ri/api/javax.ws.rs-api-2.0.1.jar"/>
 	<classpathentry kind="lib" path="jars/jaxrs-ri/lib/jersey-client.jar"/>
 	<classpathentry kind="lib" path="jars/jaxrs-ri/lib/jersey-common.jar"/>
@@ -10,6 +9,6 @@
 	<classpathentry kind="lib" path="jars/jaxrs-ri/lib/jersey-container-servlet.jar"/>
 	<classpathentry kind="lib" path="jars/jaxrs-ri/lib/jersey-media-jaxb.jar"/>
 	<classpathentry kind="lib" path="jars/jaxrs-ri/lib/jersey-server.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/RU-Backend"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Game-Engineering"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

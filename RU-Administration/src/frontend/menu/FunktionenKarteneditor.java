@@ -1,6 +1,11 @@
 package frontend.menu;
 
-import interfaces.iBackendKarteneditor;
+import ru.daten.D;
+import ru.daten.D_Fehler;
+import ru.daten.D_FeldArt;
+import ru.daten.D_KartenArt;
+import ru.daten.Xml;
+import ru.interfaces.iBackendKarteneditor;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,11 +18,6 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import daten.D;
-import daten.D_Fehler;
-import daten.D_FeldArt;
-import daten.D_KartenArt;
-import daten.Xml;
 import frontend.Frontend;
 import frontend.Karte;
 import frontend.KarteEventHandler;

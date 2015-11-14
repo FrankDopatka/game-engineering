@@ -10,7 +10,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import daten.*;
+import ru.daten.*;
 
 public class Feld extends JLabel{
 	private static final long serialVersionUID = 1L;

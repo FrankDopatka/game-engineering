@@ -4,7 +4,15 @@ import frontend.Feld;
 import frontend.Frontend;
 import frontend.Karte;
 import frontend.KarteEventHandler;
-import interfaces.iBackendSpiel;
+import ru.daten.D;
+import ru.daten.D_Einheit;
+import ru.daten.D_Fehler;
+import ru.daten.D_OK;
+import ru.daten.D_Position;
+import ru.daten.D_Spieler;
+import ru.daten.D_Stadt;
+import ru.daten.Xml;
+import ru.interfaces.iBackendSpiel;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -21,15 +29,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
-import daten.D;
-import daten.D_Einheit;
-import daten.D_Fehler;
-import daten.D_OK;
-import daten.D_Position;
-import daten.D_Spieler;
-import daten.D_Stadt;
-import daten.Xml;
 
 public class MenuTop extends JPanel implements ActionListener{
 	private static final long serialVersionUID = 1L;
