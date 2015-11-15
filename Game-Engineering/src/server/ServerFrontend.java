@@ -39,7 +39,7 @@ public class ServerFrontend extends JFrame implements ActionListener{
 	private HttpServer server;
 
 	public ServerFrontend() throws SecurityException, IOException{
-		setTitle("RU Server, Version 0.80 REST");
+		setTitle("Game-Engineering Server, Version 0.80 REST");
 		setLayout(new BorderLayout());
 		JPanel jNorth=new JPanel();
 		JPanel jSouth=new JPanel();
@@ -107,7 +107,7 @@ public class ServerFrontend extends JFrame implements ActionListener{
 	public void speichernLog(){
 		PrintWriter pw=null; 
 		try { 
-			pw=new PrintWriter(new BufferedWriter(new FileWriter("wom-server-log.txt"))); 
+			pw=new PrintWriter(new BufferedWriter(new FileWriter("ge-server-log.txt"))); 
 			pw.println(jLog.getText()); 
 		} 
 		catch (Exception e) { 
@@ -163,7 +163,7 @@ public class ServerFrontend extends JFrame implements ActionListener{
 		    System.out.println("Starte Server auf "+uri+"... ");	
    
 		    //TODO
-		    String[] packages = {"ru.backend.server"};		    
+		    String[] packages = {"ru.backend.server","schach.backend.server"};		    
 		    final ResourceConfig rc=new ResourceConfig().packages(packages); 
 
 				server=GrizzlyHttpServerFactory.createHttpServer(uri,rc);
