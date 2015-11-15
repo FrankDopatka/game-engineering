@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 
-import daten.D;
-import daten.Xml;
-import interfaces.iBackendSpielAdmin;
+import schach.daten.D;
+import schach.daten.Xml;
+import schach.interfaces.iBackendSpielAdmin;
 
 public class BackendSpielAdminStub implements iBackendSpielAdmin{
 	private static final String urlUnterPfad="schach/spiel/admin/";

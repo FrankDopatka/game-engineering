@@ -5,11 +5,11 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
-import daten.D;
-import daten.D_Figur;
-import daten.Xml;
 import backend.BackendSpielAdminStub;
 import backend.BackendSpielStub;
+import schach.daten.D;
+import schach.daten.D_Figur;
+import schach.daten.Xml;
 
 
 public class EventHandler implements ActionListener,MouseListener{

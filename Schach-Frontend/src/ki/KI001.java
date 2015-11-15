@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import backend.BackendSpielStub;
-import daten.*;
 import frontend.KI;
+import schach.daten.D;
+import schach.daten.D_Figur;
+import schach.daten.D_Zug;
+import schach.daten.Xml;
 
 public class KI001 extends KI {
 

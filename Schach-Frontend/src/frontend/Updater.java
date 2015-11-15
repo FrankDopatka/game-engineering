@@ -1,7 +1,9 @@
 package frontend;
 
 import backend.BackendSpielStub;
-import daten.*;
+import schach.daten.D_Spiel;
+import schach.daten.Xml;
+import schach.daten.ZugEnum;
 
 public class Updater extends Thread{
 	private Frontend frontend;

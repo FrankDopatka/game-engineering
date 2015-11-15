@@ -27,12 +27,12 @@ import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
 
-import daten.D;
-import daten.D_Zug;
-import daten.FigurEnum;
-import daten.Xml;
 import backend.BackendSpielAdminStub;
 import backend.BackendSpielStub;
+import schach.daten.D;
+import schach.daten.D_Zug;
+import schach.daten.FigurEnum;
+import schach.daten.Xml;
 
 public class Frontend extends JFrame{
 	public static final int updateInterval=1;

@@ -1,8 +1,8 @@
 package server;
 
 public class Initialisierung {
-	private static String ladeSpielRU="/home/dopatka02/Repo-GE/Game-Engineering/ru.spiel/spiel01.wom";
-	private static String ladeSpielSchach="/home/dopatka02/Repo-GE/Game-Engineering/schach.spiel/spiel01.wom";
+	private static String ladeSpielRU="/home/dopatka02/Repo-GE/Game-Engineering/ru.spiel/spiel01.ru";
+	private static String ladeSpielSchach="/home/dopatka02/Repo-GE/Game-Engineering/schach.spiel/spiel.xml";
 	
 	public static void ausfuehren(){
 		starteRisingUniverse();

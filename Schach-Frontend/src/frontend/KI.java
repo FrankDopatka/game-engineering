@@ -1,10 +1,10 @@
 package frontend;
 
-import daten.D;
-import daten.D_Spiel;
-import daten.Xml;
-import daten.ZugEnum;
 import backend.BackendSpielStub;
+import schach.daten.D;
+import schach.daten.D_Spiel;
+import schach.daten.Xml;
+import schach.daten.ZugEnum;
 
 public abstract class KI extends Thread{
 	private String info;

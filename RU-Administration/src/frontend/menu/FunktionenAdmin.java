@@ -180,7 +180,7 @@ public class FunktionenAdmin {
 			ArrayList<Object> eingabeFelder=new ArrayList<Object>();
 			eingabeBeschriftungen.add("Server-Pfad zum Laden:");
 			JTextField jPfad=new JTextField();
-			jPfad.setText("/home/informatik/Repository-RU/ru/RU-Backend/spiel01.wom");
+			jPfad.setText("/home/dopatka02/Repo-GE/Game-Engineering/ru.spiel/spiel01.ru");
 			eingabeFelder.add(jPfad);
 			MenuEingabe eingabe=new MenuEingabe(frontend,"Spiel laden",eingabeBeschriftungen,eingabeFelder);
 			if (eingabe.start()){
@@ -209,7 +209,7 @@ public class FunktionenAdmin {
 			ArrayList<Object> eingabeFelder=new ArrayList<Object>();
 			eingabeBeschriftungen.add("Server-Pfad zum Speichern:");
 			JTextField jPfad=new JTextField();
-			jPfad.setText("/home/informatik/Repository-RU/ru/RU-Backend/spiel01.wom");
+			jPfad.setText("/home/dopatka02/Repo-GE/Game-Engineering/ru.spiel/spiel01.ru");
 			eingabeFelder.add(jPfad);
 			MenuEingabe eingabe=new MenuEingabe(frontend,"Spiel speichern",eingabeBeschriftungen,eingabeFelder);
 			if (eingabe.start()){
