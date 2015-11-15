@@ -38,10 +38,10 @@ public class EventHandler implements ActionListener,MouseListener{
 			frontend.setEnde(false);
 		} 
 		if (quelle.equals(frontend.mSpielLaden)){
-			backendSpielAdmin.ladenSpiel("spiel.xml");
+			backendSpielAdmin.ladenSpiel("/home/dopatka02/Repo-GE/Game-Engineering/schach.spiel/spiel.xml");
 		}
 		if (quelle.equals(frontend.mSpielSpeichern)){
-			backendSpielAdmin.speichernSpiel("spiel.xml");
+			backendSpielAdmin.speichernSpiel("/home/dopatka02/Repo-GE/Game-Engineering/schach.spiel/spiel.xml");
 		}
 		if (frontend.ichSpieleWeiss())
 			frontend.setBrett(backendSpiel.getBildWeiss());
@@ -51,6 +51,10 @@ public class EventHandler implements ActionListener,MouseListener{
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
+		if (frontend.istInHistorienAnsicht()){
+			reset();
+			return;
+		}
 		int x=getKoordinateX(e.getX());
 		int y=getKoordinateY(e.getY());
 		if ((x==0)||(y==0)) return;
@@ -79,7 +83,7 @@ public class EventHandler implements ActionListener,MouseListener{
 				this.felderErlaubt=null;
 			}
 			else{
-				// das Feld hat eine Figur -> moegliche Zuege ermittelm
+				// das Feld hat eine Figur -> moegliche Zuege ermitteln
 				String xml=backendSpiel.getErlaubteZuege(Frontend.toKuerzel(x,y));
 				ArrayList<D> d_erlaubteZuege=Xml.toArray(xml);
 				ArrayList<String> sFelderErlaubt=new ArrayList<String>();

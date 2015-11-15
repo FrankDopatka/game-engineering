@@ -1,4 +1,5 @@
 package schach.backend.server;
+import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
@@ -67,6 +68,46 @@ public class BackendSpiel extends ResourceConfig implements iBackendSpiel{
 		  return Response.serverError().build();
 		}
 	}
+	
+
+
+	@GET
+	@Path("getBildHistorie/{sichtVonWeiss}/{zugNummer}/{zugVonWeiss}")
+	@Consumes("text/plain")
+	@Produces("image/png")
+	@Override
+	public Object getBildHistorie(
+			@PathParam("sichtVonWeiss") boolean sichtVonWeiss,
+			@PathParam("zugNummer") int zugNummer, 
+			@PathParam("zugVonWeiss") boolean zugVonWeiss) {
+		try{
+			Spiel s=new Spiel();
+			s.getRegelwerk().setzeStartbelegung();
+			int counter=1;
+			boolean weissZieht=true;
+			for(D zug:spiel.getZugHistorie()){
+				String feldVon=zug.getString("feldStart");
+				String feldNach=zug.getString("feldZiel");
+				s.getRegelwerk().ziehe(feldVon,feldNach);
+				if ((zugNummer==counter)&&(weissZieht==zugVonWeiss)) break;
+				weissZieht=!weissZieht;
+				if (weissZieht) counter++;
+			}
+			BufferedImage bild=null;
+			if (sichtVonWeiss)
+				bild=s.getBildWeiss();
+			else
+				bild=s.getBildSchwarz();	
+			ByteArrayOutputStream baos=new ByteArrayOutputStream();
+			ImageIO.write(bild,"png",baos);
+		  byte[] imageData=baos.toByteArray();
+		  return Response.ok(new ByteArrayInputStream(imageData)).build();
+		}
+		catch (Exception e){
+		  return Response.serverError().build();	
+		}
+	}
+	
 	
 	@GET
 	@Path("getAlleFiguren")

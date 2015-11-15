@@ -8,6 +8,8 @@ import java.awt.Graphics2D;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -58,6 +60,7 @@ public class Frontend extends JFrame{
 	private JTextArea jLog=new JTextArea();
 	private JScrollPane jScrollerLog;
 	private ArrayList<JButton> historieButtons=new ArrayList<JButton>();
+	private boolean inHistorienAnsicht=false;
 	
 	private EventHandler events=null;
 	private BackendSpielStub backendSpiel=null;
@@ -204,6 +207,10 @@ public class Frontend extends JFrame{
 		historieButtons.clear();
 		panelHistorie.removeAll();
 	}
+	
+	public ArrayList<JButton> getHistorieButtons(){
+		return historieButtons;
+	}
 
 	public void markiereFelder(int x,int y,ArrayList<String> felderErlaubt){
 		markiereFelder(toKuerzel(x,y),felderErlaubt);
@@ -268,6 +275,13 @@ public class Frontend extends JFrame{
 		resetHistorie();
 		int x=0;
 		int y=0;
+
+		GridBagConstraints cbgW=new GridBagConstraints();
+		cbgW.fill=GridBagConstraints.HORIZONTAL; cbgW.gridwidth=2;
+		cbgW.gridx=0; cbgW.gridy=0; 
+		panelHistorie.add(weiterspielenButton(),cbgW);
+
+		
 		for(D datenwert:zugHistorie){
 			D_Zug zug=(D_Zug)datenwert;
 			GridBagConstraints cbg=new GridBagConstraints();
@@ -280,13 +294,46 @@ public class Frontend extends JFrame{
 			b.setBackground(new Color(200,200,200));
 			b.setForeground(Color.BLACK);
 			b.setHorizontalAlignment(SwingConstants.LEFT);
+			b.addActionListener(new EventHandlerHistorie(this,x,y));
 			panelHistorie.add(b,cbg);
+			historieButtons.add(b);
 		}
+		
+		cbgW.gridx=0; cbgW.gridy=y+1; 
+		panelHistorie.add(weiterspielenButton(),cbgW);
+
+		
 		//TODO Scrollt leider nicht automatisch nach unten
 		panelHistorie.setVisible(true);
 		jScrollerHistorie.validate();
 		jScrollerHistorie.getVerticalScrollBar().setValue(jScrollerHistorie.getVerticalScrollBar().getMaximum());
 		jScrollerHistorie.repaint();
+	}
+	
+	private JButton weiterspielenButton(){
+		JButton w=new JButton("Weiterspielen...");
+		w.setBackground(new Color(200,200,200));
+		w.setForeground(Color.BLACK);
+		w.setHorizontalAlignment(SwingConstants.LEFT);
+		w.setEnabled(false);
+		w.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (!istInHistorienAnsicht()) return;
+				for (JButton b:getHistorieButtons()){
+					if (b.getText().equals("Weiterspielen...")){
+						setHistorienAnsicht(false);
+						b.setEnabled(false);
+					}
+					else{
+						b.setBackground(new Color(200,200,200));
+						b.setEnabled(true);						
+					}
+				}
+			}
+		});
+		historieButtons.add(w);
+		return w;
 	}
 	
 	public void resetLog(){
@@ -312,5 +359,13 @@ public class Frontend extends JFrame{
 	}
 	public boolean istZuEnde(){
 		return ende;
+	}
+
+	public boolean istInHistorienAnsicht() {
+		return inHistorienAnsicht;
+	}
+
+	public void setHistorienAnsicht(boolean inHistorienAnsicht) {
+		this.inHistorienAnsicht = inHistorienAnsicht;
 	}
 }

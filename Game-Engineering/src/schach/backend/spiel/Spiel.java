@@ -134,7 +134,6 @@ public class Spiel {
 	}
 	
 	public void addZug(D zug){
-		System.out.println(zug);
 		zugHistorie.add(zug);
 	}
 	

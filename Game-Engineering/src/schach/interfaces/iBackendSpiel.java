@@ -3,6 +3,7 @@ package schach.interfaces;
 public interface iBackendSpiel {
 	Object getBildWeiss();
 	Object getBildSchwarz();
+	Object getBildHistorie(boolean sichtVonWeiss,int zugNummer,boolean zugVonWeiss);
 	
 	String getAlleFiguren();
 	String getFigurenAufFeld(boolean weiss);

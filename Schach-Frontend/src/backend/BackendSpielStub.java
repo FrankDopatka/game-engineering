@@ -68,6 +68,22 @@ public class BackendSpielStub implements iBackendSpiel{
 		}
 	}
 	
+
+	@Override
+	public Object getBildHistorie(boolean sichtVonWeiss, int zugNummer, boolean zugVonWeiss) {
+		BufferedImage bild=null;
+		try {
+			byte[] bildDaten=client.target(url+"getBildHistorie/"+sichtVonWeiss+"/"+zugNummer+"/"+zugVonWeiss).request().accept("image/png").get(byte[].class);
+			if (bildDaten==null) return null;
+			bild=ImageIO.read((InputStream)new ByteArrayInputStream(bildDaten));
+			return bild;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
 	@Override
 	public String getAlleFiguren() {
 		return getXmlvonRest("getAlleFiguren");
