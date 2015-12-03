@@ -1,25 +1,23 @@
 package schach.backend.server;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
+
 import java.util.ArrayList;
+import java.util.HashSet;
 
-import schach.interfaces.iBackendSpiel;
-import schach.backend.figuren.Figur;
-
-import javax.imageio.ImageIO;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
-import schach.daten.*;
-import schach.backend.spiel.Feld;
-import schach.backend.spiel.Spiel;
+import schach.backend.Figur;
+import schach.backend.Spiel;
+import schach.backend.Zug;
+import schach.daten.D;
+import schach.daten.D_ZugHistorie;
+import schach.daten.Xml;
+import schach.interfaces.iBackendSpiel;
 
 @Path("schach/spiel")
 public class BackendSpiel extends ResourceConfig implements iBackendSpiel{
@@ -35,288 +33,154 @@ public class BackendSpiel extends ResourceConfig implements iBackendSpiel{
 	public static void setSpiel(Spiel spiel){
 		BackendSpiel.spiel=spiel;
 	}
-	
-	@GET
-	@Path("getBildWeiss")
-	@Produces("image/png")
-	@Override
-	public Object getBildWeiss(){
-	  try {
-		  ByteArrayOutputStream baos=new ByteArrayOutputStream();
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			ImageIO.write(spiel.getBildWeiss(),"png",baos);
-		  byte[] imageData=baos.toByteArray();
-		  return Response.ok(new ByteArrayInputStream(imageData)).build();
-		} catch (Exception e) {
-		  return Response.serverError().build();
-		}
-	}
-	
 
 	@GET
-	@Path("getBildSchwarz")
-	@Produces("image/png")
-	@Override
-	public Object getBildSchwarz() {
-	  try {
-		  ByteArrayOutputStream baos=new ByteArrayOutputStream();
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			ImageIO.write(spiel.getBildSchwarz(),"png",baos);
-		  byte[] imageData=baos.toByteArray();
-		  return Response.ok(new ByteArrayInputStream(imageData)).build();
-		} catch (Exception e) {
-		  return Response.serverError().build();
-		}
-	}
-	
-
-
-	@GET
-	@Path("getBildHistorie/{sichtVonWeiss}/{zugNummer}/{zugVonWeiss}")
-	@Consumes("text/plain")
-	@Produces("image/png")
-	@Override
-	public Object getBildHistorie(
-			@PathParam("sichtVonWeiss") boolean sichtVonWeiss,
-			@PathParam("zugNummer") int zugNummer, 
-			@PathParam("zugVonWeiss") boolean zugVonWeiss) {
-		try{
-			Spiel s=new Spiel();
-			s.getRegelwerk().setzeStartbelegung();
-			int counter=1;
-			boolean weissZieht=true;
-			for(D zug:spiel.getZugHistorie()){
-				String feldVon=zug.getString("feldStart");
-				String feldNach=zug.getString("feldZiel");
-				s.getRegelwerk().ziehe(feldVon,feldNach);
-				if ((zugNummer==counter)&&(weissZieht==zugVonWeiss)) break;
-				weissZieht=!weissZieht;
-				if (weissZieht) counter++;
-			}
-			BufferedImage bild=null;
-			if (sichtVonWeiss)
-				bild=s.getBildWeiss();
-			else
-				bild=s.getBildSchwarz();	
-			ByteArrayOutputStream baos=new ByteArrayOutputStream();
-			ImageIO.write(bild,"png",baos);
-		  byte[] imageData=baos.toByteArray();
-		  return Response.ok(new ByteArrayInputStream(imageData)).build();
-		}
-		catch (Exception e){
-		  return Response.serverError().build();	
-		}
-	}
-	
-	
-	@GET
-	@Path("getAlleFiguren")
-	@Produces("application/xml")
-	@Override
-	public String getAlleFiguren() {
-		try{
-			StringBuffer xml=new StringBuffer(); 
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			ArrayList<Figur> figuren=spiel.getFiguren();
-			for(Figur figur:figuren){
-				xml.append(figur.toXml());
-			}
-			return Xml.verpacken(xml.toString());
-		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
-		}
-	}
-	
-	@GET
-	@Path("getFigurenAufFeld/{weiss}")
-	@Consumes("text/plain")
-	@Produces("application/xml")
-	@Override
-	public String getFigurenAufFeld(
-			@PathParam("weiss") boolean weiss) {
-		try{
-			StringBuffer xml=new StringBuffer(); 
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			ArrayList<Figur> figuren=spiel.getRegelwerk().getFigurenAufFeld(weiss);
-			for(Figur figur:figuren){
-				xml.append(figur.toXml());
-			}
-			return Xml.verpacken(xml.toString());
-		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
-		}
-	}
-
-	@GET
-	@Path("getGeschlageneFiguren/{weiss}")
-	@Consumes("text/plain")
-	@Produces("application/xml")
-	@Override
-	public String getGeschlageneFiguren(
-			@PathParam("weiss") boolean weiss) {
-		try{
-			StringBuffer xml=new StringBuffer(); 
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			ArrayList<Figur> figuren=spiel.getRegelwerk().getGeschlageneFiguren(weiss);
-			for(Figur figur:figuren){
-				xml.append(figur.toXml());
-			}
-			return Xml.verpacken(xml.toString());
-		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
-		}
-	}
-
-	@GET
-	@Path("getFigur/{feld}")
-	@Consumes("text/plain")
-	@Produces("application/xml")
-	@Override
-	public String getFigur(
-			@PathParam("feld")String kuerzel) {
-		try{
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			Feld feld=spiel.getBrett().getFeld(kuerzel);
-			if (feld==null)
-				throw new RuntimeException("getFigur(): Das Feld "+kuerzel+" existiert nicht!");
-			Figur figur=feld.getFigur();
-			if (figur==null)
-				return Xml.verpacken((new D_OK("null").toXml()));
-			return Xml.verpacken(figur.toXml());
-		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
-		}
-	}
-	
-	@GET
-	@Path("getKoenig/{weiss}")
-	@Consumes("text/plain")
-	@Produces("application/xml")
-	@Override
-	public String getKoenig(
-			@PathParam("weiss") boolean weiss) {
-		try{
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			Figur figur=spiel.getKoenig(weiss);
-			return Xml.verpacken(figur.toXml());
-		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
-		}
-	}
-
-	@GET
-	@Path("getErlaubteZuege/{feld}")
-	@Consumes("text/plain")
-	@Produces("application/xml")
-	@Override
-	public String getErlaubteZuege(
-			@PathParam("feld")String kuerzel) {
-		try{
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			Feld feld=spiel.getBrett().getFeld(kuerzel);
-			if (feld==null)
-				throw new RuntimeException("getFigur(): Das Feld "+kuerzel+" existiert nicht!");
-			Figur figur=feld.getFigur();
-			if (figur==null)
-				return Xml.verpacken((new D_OK("null").toXml()));
-			ArrayList<D> dZuege=new ArrayList<D>();
-			ArrayList<String> sZuege=figur.getErlaubteZuege();
-			figur.removeZuegeSelbstImSchach(sZuege,figur);
-			for(String feldZiel:sZuege){
-				D_Zug d_zug=new D_Zug();
-				d_zug.setString("figur",figur.getKuerzel());
-				d_zug.setString("feldStart",figur.getFeld().getKuerzel());
-				d_zug.setString("feldZiel",feldZiel);
-				Figur figurZiel=spiel.getBrett().getFeld(feldZiel).getFigur();
-				if (figurZiel!=null)
-					d_zug.setString("figurGeschlagen",figurZiel.getKuerzel());
-				dZuege.add(d_zug);
-			}
-			return Xml.verpacken(Xml.fromArray(dZuege));
-		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
-		}
-	}
-
-	@GET
-	@Path("ziehe/{feldVon}/{feldNach}")
-	@Consumes("text/plain")
-	@Produces("application/xml")
-	@Override
-	public String ziehe(
-			@PathParam("feldVon") String feldVon,
-			@PathParam("feldNach") String feldNach){
-		try{
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			spiel.getRegelwerk().ziehe(feldVon,feldNach);
-			return Xml.verpacken((new D_OK().toXml()));
-		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
-		}
-	}
-	
-	@GET
-	@Path("bauerUmwandlung/{zuFigur}")
-	@Consumes("text/plain")
-	@Produces("application/xml")
-	@Override
-	public String bauerUmwandlung(
-			@PathParam("zuFigur") String zuFigur) {
-		try{
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			spiel.getRegelwerk().bauernUmwandlung(zuFigur);
-			return Xml.verpacken(Xml.fromD(spiel.toD()));
-		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
-		}
-	}
-
-	@GET
-	@Path("getSpielDaten")
+	@Path("getSpielDaten/")
 	@Produces("application/xml")
 	@Override
 	public String getSpielDaten() {
 		try{
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			return Xml.verpacken(Xml.fromD(spiel.toD()));
+			String xml=spiel.getDaten().toXml();
+			return Xml.verpacken(xml);
 		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
+			return Xml.verpackeFehler(e);
+		}
+	}
+	
+	@GET
+	@Path("getAktuelleBelegung/")
+	@Produces("application/xml")
+	@Override
+	public String getAktuelleBelegung() {
+		try{
+			String xml=spiel.getAktuelleBelegung().toXml();
+			return Xml.verpacken(xml);
+		} catch (Exception e) {
+			return Xml.verpackeFehler(e);
 		}
 	}
 
 	@GET
-	@Path("getZugHistorie")
+	@Path("getBelegung/{nummer}")
+	@Consumes("text/plain")
+	@Produces("application/xml")
+	@Override
+	public String getBelegung(
+			@PathParam("nummer")int nummer) {
+		try{
+			String xml=spiel.getBelegung(nummer).toXml();
+			return Xml.verpacken(xml);
+		} catch (Exception e) {
+			return Xml.verpackeFehler(e);
+		}
+	}
+	
+	@GET
+	@Path("getAlleErlaubtenZuege/")
+	@Produces("application/xml")
+	@Override
+	public String getAlleErlaubtenZuege() {
+		try{
+			HashSet<Zug> zuege=spiel.getAlleErlaubteZuege();
+			ArrayList<D> zuegeDaten=new ArrayList<D>();
+			if (zuege!=null){
+				for(Zug zug:zuege){
+					zuegeDaten.add(zug.getDaten());
+				}
+			}
+
+			return Xml.verpacken(Xml.fromArray(zuegeDaten));
+		} catch (Exception e) {
+			return Xml.verpackeFehler(e);
+		}
+	}
+
+	@GET
+	@Path("getFigur/{position}")
+	@Consumes("text/plain")
+	@Produces("application/xml")
+	@Override
+	public String getFigur(
+			@PathParam("position")String position) {
+		try{
+			Figur figur=spiel.getAktuelleBelegung().getFigur(position);
+			if (figur==null) throw new RuntimeException("Keine Figur auf diesem Feld!");
+			return Xml.verpacken(figur.toXml());
+		} catch (Exception e) {
+			return Xml.verpackeFehler(e);
+		}
+	}
+
+	@GET
+	@Path("getErlaubteZuege/{position}")
+	@Consumes("text/plain")
+	@Produces("application/xml")
+	@Override
+	public String getErlaubteZuege(
+			@PathParam("position")String position) {
+		try{
+			HashSet<Zug> zuege=spiel.getAktuelleBelegung().getErlaubteZuege(position);
+			ArrayList<D> zuegeListe=new ArrayList<D>();
+			if (zuege!=null){
+				for(Zug z:zuege){
+					zuegeListe.add(z.getDaten());
+				}
+			}
+			return Xml.verpacken(Xml.fromArray(zuegeListe));
+		} catch (Exception e) {
+			return Xml.verpackeFehler(e);
+		}
+	}
+
+	@GET
+	@Path("ziehe/{von}/{nach}")
+	@Consumes("text/plain")
+	@Produces("application/xml")
+	@Override
+	public String ziehe(
+			@PathParam("von")String von,
+			@PathParam("nach")String nach) {
+			try{
+				spiel.ziehe(von,nach);
+				return Xml.verpackeOK("Zug erfolgreich durchgefuehrt.");
+			} catch (Exception e) {
+				return Xml.verpackeFehler(e);
+			}
+	}
+
+	@GET
+	@Path("bauernUmwandlung/{zuFigur}")
+	@Consumes("text/plain")
+	@Produces("application/xml")
+	@Override
+	public String bauernUmwandlung(
+			@PathParam("zuFigur")String zuFigur) {
+		try{
+			spiel.bauernUmwandlungAbschliessen(zuFigur);;
+			return Xml.verpackeOK("Der Bauer wurde erfolgreich umgewandelt in "+zuFigur+".");
+		} catch (Exception e) {
+			return Xml.verpackeFehler(e);
+		}
+	}
+
+	@GET
+	@Path("getZugHistorie/")
 	@Produces("application/xml")
 	@Override
 	public String getZugHistorie() {
 		try{
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			return Xml.verpacken(Xml.fromArray(spiel.getZugHistorie()));
+			ArrayList<String> zugListe=spiel.getZugHistorie();
+			ArrayList<D> zugHistorie=new ArrayList<D>();
+			if(zugListe!=null){
+				for(String zug:zugListe){
+					D_ZugHistorie d=new D_ZugHistorie();
+					d.setString("zug",zug);
+					zugHistorie.add(d);
+				}				
+			}
+			return Xml.verpacken(Xml.fromArray(zugHistorie));
 		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
-		}
-	}
-
-	@Override
-	public String getLetzterZug() {
-		try{
-			if (spiel==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch kein Spiel!")));
-			D zug=spiel.getLetzterZug();
-			if (zug==null) return Xml.verpacken(Xml.fromD(new D_Fehler("Es gibt noch keinen Zug in diesem Spiel!")));
-			return Xml.verpacken(zug.toXml());
-		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
+			return Xml.verpackeFehler(e);
 		}
 	}
 }

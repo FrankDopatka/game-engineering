@@ -96,4 +96,13 @@ public class Xml {
 		}
 		return xmlVersenden.toString();
 	}
+	
+	public static String verpackeFehler(Exception e){
+		System.out.println(e.getMessage());
+		return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
+	}
+	
+	public static String verpackeOK(String meldung){
+		return Xml.verpacken(Xml.fromD(new D_OK(meldung)));
+	}
 }

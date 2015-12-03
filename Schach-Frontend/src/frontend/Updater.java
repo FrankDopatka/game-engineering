@@ -23,48 +23,52 @@ public class Updater extends Thread{
 		while(true){
 			try{
 				D_Spiel d_spiel=(D_Spiel)Xml.toD(backendSpiel.getSpielDaten());
-				int zaehlerServer=d_spiel.getInt("zugZaehler");
-				int zaehlerClient=frontend.getZugZaehler();
-				String bemerkungSpielzug=d_spiel.getString("bemerkungSpielzug");
-				String bemerkungSchach=d_spiel.getString("bemerkungSchach");
-				if (zaehlerClient!=zaehlerServer){
-					update(bemerkungSchach,bemerkungSpielzug,zaehlerServer);					
+				String bemerkungSpielzug=d_spiel.getString("bemerkung");
+				if (frontend.getAnzahlZuege()!=d_spiel.getInt("anzahlZuege")){
+					update(d_spiel);
 				}
 				else if (bemerkungSpielzug.equals(""+ZugEnum.BauerUmwandlungImGange)&&(!bauernUmwandlungImGange)){
 					if (frontend.ichSpieleWeiss()==d_spiel.getBool("weissAmZug")) frontend.setBauerUmwandelnImGange();	
 					bauernUmwandlungImGange=true;
-				}
-				else if ((bauernUmwandlungImGange)&&(bemerkungSpielzug.equals(""+ZugEnum.BauerUmwandlung))){
-					update(bemerkungSchach,bemerkungSpielzug,zaehlerServer);
+				}else if ((bauernUmwandlungImGange)&&(bemerkungSpielzug.equals(""+ZugEnum.BauerUmwandlung))){
 					bauernUmwandlungImGange=false;
 				}
-				Thread.sleep(timer*1000);
 			}
 			catch (Exception e){}
+			try {
+				Thread.sleep(timer*2000);
+			} catch (InterruptedException e) {}
 		}
 	}
 	
-	public void update(String bemerkungSchach,String bemerkungSpielzug,int zaehlerServer){
-		if (frontend.ichSpieleWeiss())
-			frontend.setBrett(backendSpiel.getBildWeiss());
-		else
-			frontend.setBrett(backendSpiel.getBildSchwarz());
-		boolean weissMatt=bemerkungSchach.equals(""+ZugEnum.WeissSchachMatt);
-		boolean schwarzMatt=bemerkungSchach.equals(""+ZugEnum.SchwarzSchachMatt);
-		boolean patt=bemerkungSchach.equals(""+ZugEnum.Patt);
-		if (weissMatt||schwarzMatt||patt){
+	public void update(D_Spiel d_spiel){
+		int anzahlZuege=d_spiel.getInt("anzahlZuege");
+		Belegung b=new Belegung(backendSpiel.getAktuelleBelegung(),frontend.ichSpieleWeiss());
+		frontend.setBelegung(b.getBild()); 
+		if (b.isWeissSchachMatt()||b.isSchwarzSchachMatt()||b.isPatt()){
 			// Spiel ist zu Ende
-			if (frontend.ichSpieleWeiss()&&weissMatt) 
-				frontend.log("Leider verloren, ich bin SCHACH MATT :-(");
-			else if (frontend.ichSpieleSchwarz()&&schwarzMatt) 
-				frontend.log("Leider verloren, ich bin SCHACH MATT :-(");
-			else if (patt) 
+			if (frontend.ichSpieleWeiss()&&b.isWeissSchachMatt()) 
+				frontend.log("Leider verloren, Weiss ist SCHACH MATT :-(");
+			else if (frontend.ichSpieleSchwarz()&&b.isSchwarzSchachMatt()) 
+				frontend.log("Leider verloren, Schwarz ist SCHACH MATT :-(");
+			else if (b.isPatt()) 
 				frontend.log("UNENDSCHIEDEN! PATT!");
 			else
-				frontend.log("GEWONNEN! Du bist SCHACH MATT!");
+				frontend.log("GEWONNEN! Dein Gegner ist SCHACH MATT!");
 			frontend.setEnde(true);
-		}	
-		frontend.setZugZaehler(zaehlerServer);
+		}else{
+			if (frontend.ichSpieleWeiss()&&b.isWeissImSchach()){
+				frontend.log("SCHACH!");
+			}else if (frontend.ichSpieleSchwarz()&&b.isSchwarzImSchach()){
+				frontend.log("SCHACH!");
+			}else if (frontend.ichSpieleWeiss()&&b.isSchwarzImSchach()){
+				frontend.log("Dein Gegner ist im SCHACH!");
+			}else if (frontend.ichSpieleSchwarz()&&b.isWeissImSchach()){
+				frontend.log("Dein Gegner ist im SCHACH!");
+			}
+		}
+		frontend.setAnzahlZuege(anzahlZuege);
+		frontend.setHistorienAnsicht(false);
 		frontend.updateLog();
 	}
 }

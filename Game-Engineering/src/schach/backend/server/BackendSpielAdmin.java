@@ -1,6 +1,5 @@
 package schach.backend.server;
 
-import schach.interfaces.iBackendSpielAdmin;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -10,8 +9,9 @@ import javax.ws.rs.Produces;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
-import schach.backend.spiel.Spiel;
-import schach.daten.*;
+import schach.backend.Spiel;
+import schach.daten.Xml;
+import schach.interfaces.iBackendSpielAdmin;
 
 @Path("schach/spiel/admin")
 public class BackendSpielAdmin extends ResourceConfig implements iBackendSpielAdmin{
@@ -24,12 +24,11 @@ public class BackendSpielAdmin extends ResourceConfig implements iBackendSpielAd
 	public String neuesSpiel(){
 		try {
 			Spiel spiel=new Spiel();
-			spiel.getRegelwerk().setzeStartbelegung();
+			spiel.initStandardbelegung();
 			BackendSpiel.setSpiel(spiel);
-			return Xml.verpacken(Xml.fromD(new D_OK()));
+			return Xml.verpackeOK("Spiel erfolgreich erstellt.");
 		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
+			return Xml.verpackeFehler(e);
 		}
 	}
 
@@ -43,10 +42,9 @@ public class BackendSpielAdmin extends ResourceConfig implements iBackendSpielAd
 		try{
 			Spiel spiel=new Spiel(pfad);
 			BackendSpiel.setSpiel(spiel);
-			return Xml.verpacken(Xml.fromD(new D_OK()));
+			return Xml.verpackeOK("Spiel erfolgreich geladen.");
 		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
+			return Xml.verpackeFehler(e);
 		}		
 	}
 	
@@ -60,10 +58,9 @@ public class BackendSpielAdmin extends ResourceConfig implements iBackendSpielAd
 		try {
 			if (!pfad.endsWith(".xml")) pfad=pfad+".xml";
 			BackendSpiel.getSpiel().speichern(pfad);
-			return Xml.verpacken(Xml.fromD(new D_OK()));
+			return Xml.verpackeOK("Spiel erfolgreich gespeichert.");
 		} catch (Exception e) {
-			e.printStackTrace();
-			return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
+			return Xml.verpackeFehler(e);
 		}
 	}
 }

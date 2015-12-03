@@ -3,8 +3,8 @@ package frontend;
 import backend.BackendSpielStub;
 import schach.daten.D;
 import schach.daten.D_Spiel;
+import schach.daten.SpielEnum;
 import schach.daten.Xml;
-import schach.daten.ZugEnum;
 
 public abstract class KI extends Thread{
 	private String info;
@@ -48,17 +48,17 @@ public abstract class KI extends Thread{
 	public void start() {
 		super.start();		
 	}
-	
+
 	@Override
 	public void run(){
 		while (!ende){
 			try {
 				D d=Xml.toD(getBackend().getSpielDaten());
 				D_Spiel d_Spiel=(D_Spiel)d;
-				String bemerkungSchach=d_Spiel.getString("bemerkungSchach");
-				boolean weissMatt=bemerkungSchach.equals(""+ZugEnum.WeissSchachMatt);
-				boolean schwarzMatt=bemerkungSchach.equals(""+ZugEnum.SchwarzSchachMatt);
-				boolean patt=bemerkungSchach.equals(""+ZugEnum.Patt);
+				String status=""+d_Spiel.getString("status");
+				boolean weissMatt=status.equals(""+SpielEnum.WeissSchachMatt);
+				boolean schwarzMatt=status.equals(""+SpielEnum.SchwarzSchachMatt);
+				boolean patt=status.equals(""+SpielEnum.Patt);
 
 				if (weissMatt||schwarzMatt||patt){
 					// Spiel ist zu Ende
@@ -74,7 +74,7 @@ public abstract class KI extends Thread{
 				}
 				else{
 					// Spiel geht weiter
-					if (d_Spiel.getBool("weissAmZug")==binWeiss())
+					if ((d_Spiel.getInt("anzahlZuege")%2==0)==binWeiss())
 						ichBinAmZug();
 					else
 						ichBinNichtZug();					
@@ -104,4 +104,3 @@ public abstract class KI extends Thread{
 		return frontend;
 	}	
 }
-

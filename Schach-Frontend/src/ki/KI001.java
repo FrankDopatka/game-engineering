@@ -6,7 +6,6 @@ import java.util.Random;
 import backend.BackendSpielStub;
 import frontend.KI;
 import schach.daten.D;
-import schach.daten.D_Figur;
 import schach.daten.D_Zug;
 import schach.daten.Xml;
 
@@ -19,33 +18,13 @@ public class KI001 extends KI {
 	@Override
 	public void ichBinAmZug() {
 		BackendSpielStub b=getBackend();
-		ArrayList<D_Zug> zuege=new ArrayList<D_Zug>();
-		ArrayList<D> meineFiguren=Xml.toArray(b.getFigurenAufFeld(binWeiss()));
-
-		if (meineFiguren!=null){ // alle erlaubten Zuege auslesen
-			for(D figur:meineFiguren){
-				if (figur instanceof D_Figur){
-					String feldStart=figur.getString("feld");
-					ArrayList<D> felderZiel=Xml.toArray(b.getErlaubteZuege(feldStart));				
-					 if (felderZiel!=null){
-						 for(D zug:felderZiel){
-							 if (zug instanceof D_Zug){
-								 D_Zug zugNeu=new D_Zug();
-								 zugNeu.setString("feldStart",feldStart);
-								 zugNeu.setString("feldZiel",zug.getString("feldZiel"));
-								 zuege.add(zugNeu);
-							 }
-						 }
-					 }
-				}
-			}
-			
-
-			// zufaelligen Zug durchfuehren
-			int zugNummer=getZufallszahl(0,zuege.size());
-			D_Zug zugGewaehlt=zuege.get(zugNummer);
-			b.ziehe(zugGewaehlt.getString("feldStart"),zugGewaehlt.getString("feldZiel"));
-		}
+		// alle erlaubten Zuege auslesen
+		ArrayList<D> zuege=Xml.toArray(b.getAlleErlaubtenZuege());
+		
+		// zufaelligen Zug durchfuehren
+		int zugNummer=getZufallszahl(0,zuege.size());
+		D_Zug zugGewaehlt=(D_Zug)zuege.get(zugNummer);
+		b.ziehe(zugGewaehlt.getString("von"),zugGewaehlt.getString("nach"));
 	}
 
 	@Override

@@ -1,5 +1,10 @@
 package schach.daten;
 
 public enum ZugEnum {
-	Rochade,EnPassant,WeissImSchach,WeissSchachMatt,SchwarzImSchach,SchwarzSchachMatt,BauerDoppelschritt,BauerUmwandlung,BauerUmwandlungImGange,Patt;
+	RochadeKurz,RochadeLang,EnPassant,BauerDoppelschritt,BauerUmwandlung,BauerUmwandlungImGange;
+	
+	public static ZugEnum toEnumFromString(String s){
+		if ((s==null)||(s.length()==0)) return null;
+		return valueOf(s);
+	}
 }

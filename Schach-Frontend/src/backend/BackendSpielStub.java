@@ -1,17 +1,14 @@
 package backend;
 
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
 import java.util.ArrayList;
 
-import javax.imageio.ImageIO;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 
 import schach.daten.D;
 import schach.daten.Xml;
 import schach.interfaces.iBackendSpiel;
+
 
 public class BackendSpielStub implements iBackendSpiel{
 	private static final String urlUnterPfad="schach/spiel/";
@@ -37,106 +34,48 @@ public class BackendSpielStub implements iBackendSpiel{
 		return s;
 	}
 	
-	
-	
-	
-	@Override
-	public BufferedImage getBildWeiss() {
-		BufferedImage bild=null;
-		try {
-			byte[] bildDaten=client.target(url+"getBildWeiss/").request().accept("image/png").get(byte[].class);
-			bild=ImageIO.read((InputStream)new ByteArrayInputStream(bildDaten));
-			return bild;
-		}
-		catch(Exception e){
-			e.printStackTrace();
-			throw new RuntimeException("Fehler bei der Kommunikation zum Server in getBildWeiss(): "+url+"getBild/");
-		}
-	}
-
-	@Override
-	public BufferedImage getBildSchwarz() {
-		BufferedImage bild=null;
-		try {
-			byte[] bildDaten=client.target(url+"getBildSchwarz/").request().accept("image/png").get(byte[].class);
-			bild=ImageIO.read((InputStream)new ByteArrayInputStream(bildDaten));
-			return bild;
-		}
-		catch(Exception e){
-			e.printStackTrace();
-			throw new RuntimeException("Fehler bei der Kommunikation zum Server in getBildWeiss(): "+url+"getBild/");
-		}
-	}
-	
-
-	@Override
-	public Object getBildHistorie(boolean sichtVonWeiss, int zugNummer, boolean zugVonWeiss) {
-		BufferedImage bild=null;
-		try {
-			byte[] bildDaten=client.target(url+"getBildHistorie/"+sichtVonWeiss+"/"+zugNummer+"/"+zugVonWeiss).request().accept("image/png").get(byte[].class);
-			if (bildDaten==null) return null;
-			bild=ImageIO.read((InputStream)new ByteArrayInputStream(bildDaten));
-			return bild;
-		}
-		catch(Exception e){
-			e.printStackTrace();
-			return null;
-		}
-	}
-	
-	@Override
-	public String getAlleFiguren() {
-		return getXmlvonRest("getAlleFiguren");
-	}
-	
-	@Override
-	public String getFigurenAufFeld(boolean weiss) {
-		return getXmlvonRest("getFigurenAufFeld"+"/"+weiss);
-	}
-
-	@Override
-	public String getGeschlageneFiguren(boolean weiss) {
-		return getXmlvonRest("getGeschlageneFiguren"+"/"+weiss);
-	}
-	
-	@Override
-	public String getFigur(String feld) {
-		return getXmlvonRest("getFigur"+"/"+feld);
-	}
-	
-	@Override
-	public String getKoenig(boolean weiss) {
-		return getXmlvonRest("getKoenig"+"/"+weiss);
-	}
-	
-	@Override
-	public String getErlaubteZuege(String feld) {
-		return getXmlvonRest("getErlaubteZuege"+"/"+feld);
-	}
-
-	@Override
-	public String ziehe(String feldVon, String feldNach) {
-		return getXmlvonRest("ziehe"+"/"+feldVon+"/"+feldNach);
-	}
-
-	@Override
-	public String bauerUmwandlung(String zuFigur) {
-		return getXmlvonRest("bauerUmwandlung"+"/"+zuFigur);
-	}
-
-	
 	@Override
 	public String getSpielDaten() {
-		return getXmlvonRest("getSpielDaten");
-	}
-	
-	@Override
-	public String getZugHistorie() {
-		return getXmlvonRest("getZugHistorie");
+		return getXmlvonRest("getSpielDaten/");
 	}
 
 	@Override
-	public String getLetzterZug() {
-		return getXmlvonRest("getLetzterZug");
+	public String getAktuelleBelegung() {
+		return getXmlvonRest("getAktuelleBelegung/");
+	}
+	
+	@Override
+	public String getBelegung(int nummer) {
+		return getXmlvonRest("getBelegung/"+nummer);
+	}
+	
+	@Override
+	public String getAlleErlaubtenZuege() {
+		return getXmlvonRest("getAlleErlaubtenZuege/");
+	}
+
+	@Override
+	public String getFigur(String position) {
+		return getXmlvonRest("getFigur/"+position);
+	}
+
+	@Override
+	public String getErlaubteZuege(String position) {
+		return getXmlvonRest("getErlaubteZuege/"+position);
+	}
+
+	@Override
+	public String ziehe(String von,String nach) {
+		return getXmlvonRest("ziehe/"+von+"/"+nach);
+	}
+	
+	@Override
+	public String bauernUmwandlung(String zuFigur) {
+		return getXmlvonRest("bauernUmwandlung/"+zuFigur);
+	}
+
+	@Override
+	public String getZugHistorie() {
+		return getXmlvonRest("getZugHistorie/");
 	}
 }

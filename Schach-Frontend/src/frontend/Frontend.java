@@ -5,20 +5,22 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.swing.DefaultListModel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -27,12 +29,12 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
+import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
 
 import backend.BackendSpielAdminStub;
 import backend.BackendSpielStub;
 import schach.daten.D;
-import schach.daten.D_Zug;
 import schach.daten.FigurEnum;
 import schach.daten.Xml;
 
@@ -50,38 +52,39 @@ public class Frontend extends JFrame{
 	public final JMenuItem mVerwaltungEinstellungen=new JMenuItem("Einstellungen");
 	public final JMenuItem mVerwaltungInfo=new JMenuItem("Info");
 
-	private JLabel brett=new JLabel();
-	private BufferedImage brettBild=null;
-
-	private JPanel panelBrett=new JPanel();
+	private JPanel panelBelegung=new JPanel();
+	private JLabel labelBelegung=new JLabel();
+	private BufferedImage belegungBild=null;
 
 	private JPanel panelHistorie=new JPanel();
 	private JScrollPane jScrollerHistorie;
 	private JTextArea jLog=new JTextArea();
 	private JScrollPane jScrollerLog;
-	private ArrayList<JButton> historieButtons=new ArrayList<JButton>();
-	private boolean inHistorienAnsicht=false;
 	
-	private EventHandler events=null;
+	private JList<String> zugListe=new JList<String>();
+	private boolean inHistorienAnsicht=false;
+	private JButton weiterspielenButton=new JButton("Weiterspielen...");
+	
+	private EventHandlerBelegung events=null;
 	private BackendSpielStub backendSpiel=null;
 	private BackendSpielAdminStub backendSpielAdmin=null;
 
 	private boolean binWeiss=true;
-	private int zugZaehler=-1;
+	private int anzahlZuege=-1;
 	private boolean ende=false;
 
 	public static String toZeichen(int wert){
 		return ""+(char)(96+wert);
 	}
 	
-	public static String toKuerzel(int x,int y){
+	public static String toSchachNotation(int x,int y){
 		return toZeichen(x)+y;
 	}
 	
-	public static int[] fromKuerzel(String kuerzel){ //x,y
+	public static int[] toArrayNotation(String schachNotation){ //x,y
 		int[] ergebnis=new int[2];
-		ergebnis[0]=((int)kuerzel.toCharArray()[0])-96;
-		ergebnis[1]=Integer.parseInt(""+kuerzel.toCharArray()[1]);
+		ergebnis[0]=((int)schachNotation.toCharArray()[0])-96;
+		ergebnis[1]=Integer.parseInt(""+schachNotation.toCharArray()[1]);
 		return ergebnis;
 	}
 	
@@ -96,7 +99,7 @@ public class Frontend extends JFrame{
 	private Frontend(String url){
 		backendSpiel=new BackendSpielStub(url);
 		backendSpielAdmin=new BackendSpielAdminStub(url);
-		events=new EventHandler(this);
+		events=new EventHandlerBelegung(this);
 
 		// MENU
 		JPanel panelMenu=new JPanel(); 
@@ -105,23 +108,33 @@ public class Frontend extends JFrame{
 		panelMenu.add(menu,BorderLayout.NORTH);
 		add(panelMenu,BorderLayout.NORTH);
 		
-		// SPIELBRETT
-		panelBrett.setLayout(null);
-		panelBrett.addMouseListener(events);
-		brett.setLayout(null);
-		brett.setOpaque(false);
-		brett.setSize(445,540);
-		panelBrett.add(brett);
+		// SPIELBELEGUNG
+		panelBelegung.setLayout(null);
+		panelBelegung.addMouseListener(events);
+		labelBelegung.setLayout(null);
+		labelBelegung.setOpaque(false);
+		labelBelegung.setSize(445,540);
+		panelBelegung.add(labelBelegung);
 
 		// HISTORIE
-		panelHistorie.setLayout(new GridBagLayout());
+		panelHistorie.setLayout(new BorderLayout());
 		JPanel p=new JPanel();
 		p.add(panelHistorie);
 		jScrollerHistorie=new JScrollPane(p,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 		jScrollerHistorie.setPreferredSize(new Dimension(300,400));
+		weiterspielenButton.setBackground(new Color(200,200,200));
+		weiterspielenButton.setForeground(Color.BLACK);
+		weiterspielenButton.setHorizontalAlignment(SwingConstants.LEFT);
+		weiterspielenButton.setEnabled(false);
+		weiterspielenButton.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (isInHistorienAnsicht()) setHistorienAnsicht(false);
+			}
+		});
 
-		// SPIELBRETT + HISTORIE EINTRAGEN
-		JSplitPane splitter=new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,panelBrett,jScrollerHistorie);
+		// SPIELBELEGUNG + HISTORIE EINTRAGEN
+		JSplitPane splitter=new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,panelBelegung,jScrollerHistorie);
 		splitter.setDividerLocation(450);
 		add(splitter,BorderLayout.CENTER);
 
@@ -131,7 +144,7 @@ public class Frontend extends JFrame{
 		jScrollerLog.setPreferredSize(new Dimension(150,150));
 		add(jScrollerLog,BorderLayout.SOUTH);
 		
-		setSize(800,750);
+		setSize(700,750);
 		setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
@@ -163,13 +176,13 @@ public class Frontend extends JFrame{
 		new Updater(this,updateInterval);
 	}
 	
-	public void setBrett(BufferedImage brettBild){
-		this.brettBild=brettBild;
-		updateBrett(brettBild);
+	public void setBelegung(BufferedImage belegungBild){
+		this.belegungBild=belegungBild;
+		updateBelegung(belegungBild);
 	}
 	
-	public void updateBrett(Image bildNeu){
-		brett.setIcon(new ImageIcon(bildNeu));		
+	public void updateBelegung(Image bildNeu){
+		labelBelegung.setIcon(new ImageIcon(bildNeu));		
 	}
 	
 	public BackendSpielStub getBackendSpiel(){
@@ -180,7 +193,7 @@ public class Frontend extends JFrame{
 		return backendSpielAdmin;
 	}
 
-	public EventHandler getEventHandler(){
+	public EventHandlerBelegung getEventHandler(){
 		return events;
 	}
 	
@@ -192,42 +205,37 @@ public class Frontend extends JFrame{
 	}
 	
 	public boolean ichBinAmZug(){
-		return(ichSpieleWeiss()==(getZugZaehler()%2==0));
+		return(ichSpieleWeiss()==(getAnzahlZuege()%2==0));
 	}
 	
-	public int getZugZaehler() {
-		return zugZaehler;
+	public int getAnzahlZuege() {
+		return anzahlZuege;
 	}
 
-	public void setZugZaehler(int zugZaehler) {
-		this.zugZaehler = zugZaehler;
+	public void setAnzahlZuege(int anzahlZuege) {
+		this.anzahlZuege = anzahlZuege;
 	}
 	
 	public void resetHistorie(){
-		historieButtons.clear();
 		panelHistorie.removeAll();
-	}
-	
-	public ArrayList<JButton> getHistorieButtons(){
-		return historieButtons;
 	}
 
 	public void markiereFelder(int x,int y,ArrayList<String> felderErlaubt){
-		markiereFelder(toKuerzel(x,y),felderErlaubt);
+		markiereFelder(toSchachNotation(x,y),felderErlaubt);
 	}
 	public void markiereFelder(String feldMarkiert,ArrayList<String> felderErlaubt){
-		int xFeld=fromKuerzel(feldMarkiert)[0];
-		int yFeld=fromKuerzel(feldMarkiert)[1];
+		int xFeld=toArrayNotation(feldMarkiert)[0];
+		int yFeld=toArrayNotation(feldMarkiert)[1];
 		if ((xFeld==0)||(yFeld==0)) return;
 		int[] viereck=new int[4];
-		BufferedImage im=kopiereBild(brettBild);
+		BufferedImage im=kopiereBild(belegungBild);
 		Graphics2D g=(Graphics2D) im.getGraphics();
 		g.setStroke(new BasicStroke(3));
 		if ((felderErlaubt!=null)&&(felderErlaubt.size()>0)){
 			for(String feld:felderErlaubt){
 				if (feld==null) continue;
-				int xFeldErlaubt=fromKuerzel(feld)[0];
-				int yFeldErlaubt=fromKuerzel(feld)[1];
+				int xFeldErlaubt=toArrayNotation(feld)[0];
+				int yFeldErlaubt=toArrayNotation(feld)[1];
 				viereck=getFeldStart(xFeldErlaubt,yFeldErlaubt);
 				g.setColor(new Color(255,255,0));
 				g.drawRect(viereck[0],viereck[1],50,50);
@@ -237,7 +245,7 @@ public class Frontend extends JFrame{
 		viereck=getFeldStart(xFeld,yFeld);
 		g.drawRect(viereck[0],viereck[1],50,50);
 		g.dispose();
-		updateBrett(im);
+		updateBelegung(im);
 	}
 	
 	private int[] getFeldStart(int x,int y){
@@ -266,74 +274,37 @@ public class Frontend extends JFrame{
 	public void setBauerUmwandelnImGange() {
 		JOptionPane.showMessageDialog(this,"Der Einfachheit halber bekommen Sie eine Dame.\nNormalerweise koennen Sie zwischen Dame, Turm, Laeufer oder Springer waehlen!",
 		    "Bauernumwandlung!", JOptionPane.INFORMATION_MESSAGE);
-		backendSpiel.bauerUmwandlung(""+FigurEnum.Dame);
+		backendSpiel.bauernUmwandlung(""+FigurEnum.Dame);
 	}
 
 	public void updateLog() {
 		ArrayList<D> zugHistorie=Xml.toArray(backendSpiel.getZugHistorie());
-		panelHistorie.setVisible(false);
 		resetHistorie();
-		int x=0;
-		int y=0;
-
-		GridBagConstraints cbgW=new GridBagConstraints();
-		cbgW.fill=GridBagConstraints.HORIZONTAL; cbgW.gridwidth=2;
-		cbgW.gridx=0; cbgW.gridy=0; 
-		panelHistorie.add(weiterspielenButton(),cbgW);
-
-		
+		zugListe.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		zugListe.setBackground(null);
+		DefaultListModel<String> model=new DefaultListModel<String>();
+		zugListe.setModel(model);
 		for(D datenwert:zugHistorie){
-			D_Zug zug=(D_Zug)datenwert;
-			GridBagConstraints cbg=new GridBagConstraints();
-			cbg.fill=GridBagConstraints.HORIZONTAL;
-			if (x==2) x=0;
-			if (x%2==0) y++;
-			cbg.gridx=x; cbg.gridy=y;
-			x++;
-			JButton b=new JButton(zug.toPGN());
-			b.setBackground(new Color(200,200,200));
-			b.setForeground(Color.BLACK);
-			b.setHorizontalAlignment(SwingConstants.LEFT);
-			b.addActionListener(new EventHandlerHistorie(this,x,y));
-			panelHistorie.add(b,cbg);
-			historieButtons.add(b);
+			String zug=datenwert.getString("zug");
+			if ((zug!=null)&&(zug.length()>0)) model.addElement(zug);
 		}
+		zugListe.addMouseListener(new MouseAdapter() {
+	     public void mouseClicked(MouseEvent e) {
+	    	 @SuppressWarnings("unchecked")
+	    	 int index=((JList<String>)e.getSource()).locationToIndex(e.getPoint());
+	    	 setHistorienAnsicht(true);
+	    	 Belegung b=new Belegung(backendSpiel.getBelegung(index+1),binWeiss);
+	    	 setBelegung(b.getBild());
+	     }
+	  });
+		zugListe.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+		zugListe.setVisibleRowCount(-1);
 		
-		cbgW.gridx=0; cbgW.gridy=y+1; 
-		panelHistorie.add(weiterspielenButton(),cbgW);
-
-		
-		//TODO Scrollt leider nicht automatisch nach unten
-		panelHistorie.setVisible(true);
+		panelHistorie.add(zugListe,BorderLayout.CENTER);
+		panelHistorie.add(weiterspielenButton,BorderLayout.SOUTH);
 		jScrollerHistorie.validate();
 		jScrollerHistorie.getVerticalScrollBar().setValue(jScrollerHistorie.getVerticalScrollBar().getMaximum());
 		jScrollerHistorie.repaint();
-	}
-	
-	private JButton weiterspielenButton(){
-		JButton w=new JButton("Weiterspielen...");
-		w.setBackground(new Color(200,200,200));
-		w.setForeground(Color.BLACK);
-		w.setHorizontalAlignment(SwingConstants.LEFT);
-		w.setEnabled(false);
-		w.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				if (!istInHistorienAnsicht()) return;
-				for (JButton b:getHistorieButtons()){
-					if (b.getText().equals("Weiterspielen...")){
-						setHistorienAnsicht(false);
-						b.setEnabled(false);
-					}
-					else{
-						b.setBackground(new Color(200,200,200));
-						b.setEnabled(true);						
-					}
-				}
-			}
-		});
-		historieButtons.add(w);
-		return w;
 	}
 	
 	public void resetLog(){
@@ -361,11 +332,20 @@ public class Frontend extends JFrame{
 		return ende;
 	}
 
-	public boolean istInHistorienAnsicht() {
+	public boolean isInHistorienAnsicht() {
 		return inHistorienAnsicht;
 	}
 
 	public void setHistorienAnsicht(boolean inHistorienAnsicht) {
+		if (inHistorienAnsicht){
+			weiterspielenButton.setEnabled(true);
+		}
+		else{
+			zugListe.clearSelection();
+			weiterspielenButton.setEnabled(false);			
+			Belegung b=new Belegung(backendSpiel.getAktuelleBelegung(),binWeiss);
+   	 	setBelegung(b.getBild());
+		}
 		this.inHistorienAnsicht = inHistorienAnsicht;
 	}
 }

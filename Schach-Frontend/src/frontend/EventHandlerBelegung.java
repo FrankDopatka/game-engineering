@@ -11,15 +11,14 @@ import schach.daten.D;
 import schach.daten.D_Figur;
 import schach.daten.Xml;
 
-
-public class EventHandler implements ActionListener,MouseListener{
+public class EventHandlerBelegung implements ActionListener,MouseListener{
 	private Frontend frontend;
 	private BackendSpielStub backendSpiel=null;
 	private BackendSpielAdminStub backendSpielAdmin=null;
 	private String feldMarkiert=null;
 	private ArrayList<String> felderErlaubt=new ArrayList<String>();
 	
-	public EventHandler(Frontend frontend){
+	public EventHandlerBelegung(Frontend frontend){
 		this.frontend=frontend;
 		backendSpiel=frontend.getBackendSpiel();
 		backendSpielAdmin=frontend.getBackendSpielAdmin();
@@ -33,65 +32,64 @@ public class EventHandler implements ActionListener,MouseListener{
 	@Override
 	public void actionPerformed(ActionEvent ev) {
 		Object quelle=ev.getSource();
+		String xml="";
 		if (quelle.equals(frontend.mSpielNeu)){
-			backendSpielAdmin.neuesSpiel();
+			xml=backendSpielAdmin.neuesSpiel();
 			frontend.setEnde(false);
+			frontend.printlnLog(Xml.toD(xml).getString("meldung"));
 		} 
 		if (quelle.equals(frontend.mSpielLaden)){
-			backendSpielAdmin.ladenSpiel("/home/dopatka02/Repo-GE/Game-Engineering/schach.spiel/spiel.xml");
+			xml=backendSpielAdmin.ladenSpiel("/home/dopatka02/Repo-GE/Game-Engineering/schach.spiel/spiel.xml");
+			frontend.printlnLog(Xml.toD(xml).getString("meldung"));
 		}
 		if (quelle.equals(frontend.mSpielSpeichern)){
-			backendSpielAdmin.speichernSpiel("/home/dopatka02/Repo-GE/Game-Engineering/schach.spiel/spiel.xml");
+			xml=backendSpielAdmin.speichernSpiel("/home/dopatka02/Repo-GE/Game-Engineering/schach.spiel/spiel.xml");
+			frontend.printlnLog(Xml.toD(xml).getString("meldung"));
 		}
-		if (frontend.ichSpieleWeiss())
-			frontend.setBrett(backendSpiel.getBildWeiss());
-		else
-			frontend.setBrett(backendSpiel.getBildSchwarz());
+		Belegung b=new Belegung(backendSpiel.getAktuelleBelegung(),frontend.ichSpieleWeiss());
+		frontend.setBelegung(b.getBild());
 	}
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		if (frontend.istInHistorienAnsicht()){
+		if (frontend.isInHistorienAnsicht()){
 			reset();
 			return;
 		}
 		int x=getKoordinateX(e.getX());
 		int y=getKoordinateY(e.getY());
 		if ((x==0)||(y==0)) return;
-		if ((felderErlaubt!=null)&&felderErlaubt.contains(Frontend.toKuerzel(x,y))){
+		if ((felderErlaubt!=null)&&felderErlaubt.contains(Frontend.toSchachNotation(x,y))){
 			if (!frontend.ichBinAmZug()){
 				frontend.log("Sie sind nicht am Zug!");
 				return;
 			}
 			// 2. Klick auf ein Feld: Zug durchfuehren
-			backendSpiel.ziehe(feldMarkiert,Frontend.toKuerzel(x,y));
-			if (frontend.ichSpieleWeiss())
-				frontend.setBrett(backendSpiel.getBildWeiss());
-			else
-				frontend.setBrett(backendSpiel.getBildSchwarz());
+			backendSpiel.ziehe(feldMarkiert,Frontend.toSchachNotation(x,y));	
+			Belegung b=new Belegung(backendSpiel.getAktuelleBelegung(),frontend.ichSpieleWeiss());
+			frontend.setBelegung(b.getBild()); 
 			reset();
 		}
 		else{
-			// 1. Klick auf ein Feld
 	 		D_Figur d_Figur=null;
-			D d=Xml.toD(backendSpiel.getFigur(Frontend.toKuerzel(x,y)));
+			D d=Xml.toD(backendSpiel.getFigur(Frontend.toSchachNotation(x,y)));
 			if (d instanceof D_Figur) d_Figur=(D_Figur)d;
-			if ((d_Figur==null)||(frontend.ichSpieleWeiss()!=d_Figur.getBool("istWeiss"))){
+			if ((d_Figur==null)||(frontend.ichSpieleWeiss()!=d_Figur.getBool("isWeiss"))){
 				// das Feld hat keine Figur oder eine Figur der anderen Farbe -> ich darf nicht ziehen.
 				frontend.markiereFelder(x,y,null);
-				this.feldMarkiert=Frontend.toKuerzel(x,y);
+				this.feldMarkiert=Frontend.toSchachNotation(x,y);
 				this.felderErlaubt=null;
 			}
 			else{
 				// das Feld hat eine Figur -> moegliche Zuege ermitteln
-				String xml=backendSpiel.getErlaubteZuege(Frontend.toKuerzel(x,y));
+				String xml=backendSpiel.getErlaubteZuege(Frontend.toSchachNotation(x,y));
 				ArrayList<D> d_erlaubteZuege=Xml.toArray(xml);
 				ArrayList<String> sFelderErlaubt=new ArrayList<String>();
 				for(D d_Zug:d_erlaubteZuege){
-					sFelderErlaubt.add(d_Zug.getString("feldZiel"));
+					sFelderErlaubt.add(d_Zug.getString("nach"));
 				}
 				frontend.markiereFelder(x,y,sFelderErlaubt);
-				this.feldMarkiert=Frontend.toKuerzel(x,y);
+				this.feldMarkiert=Frontend.toSchachNotation(x,y);
 				this.felderErlaubt=sFelderErlaubt;
 			}
 		}

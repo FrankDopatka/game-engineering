@@ -150,6 +150,13 @@ public class D{
 		return p.toString();
 	}
 	
+	public boolean equals(Object o){
+		if (o==null) return false;
+		if (!this.getClass().getSimpleName().equals(o.getClass().getSimpleName())) return false;
+		D d=(D)o;
+		return this.p.equals(d.p);
+	}
+	
 	@Override
 	public D clone(){
 		try {

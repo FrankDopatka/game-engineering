@@ -6,7 +6,6 @@ import java.util.Random;
 import backend.BackendSpielStub;
 import frontend.KI;
 import schach.daten.D;
-import schach.daten.D_Figur;
 import schach.daten.D_Zug;
 import schach.daten.Xml;
 
@@ -19,41 +18,21 @@ public class KI002 extends KI {
 	@Override
 	public void ichBinAmZug() {
 		BackendSpielStub b=getBackend();
-		ArrayList<D_Zug> zuege=new ArrayList<D_Zug>();
-		ArrayList<D_Zug> zuegeSchlagen=new ArrayList<D_Zug>();
-		ArrayList<D> meineFiguren=Xml.toArray(b.getFigurenAufFeld(binWeiss()));
+		// alle erlaubten Zuege auslesen
+		ArrayList<D> zuege=Xml.toArray(b.getAlleErlaubtenZuege());
 
-		if (meineFiguren!=null){ 
-			for(D figur:meineFiguren){ // alle erlaubten Zuege auslesen
-				if (figur instanceof D_Figur){
-					String feldStart=figur.getString("feld");
-					ArrayList<D> felderZiel=Xml.toArray(b.getErlaubteZuege(feldStart));				
-					 if (felderZiel!=null){
-						 for(D zug:felderZiel){
-							 if (zug instanceof D_Zug){
-								 D_Zug zugNeu=new D_Zug();
-								 zugNeu.setString("feldStart",feldStart);
-								 zugNeu.setString("feldZiel",zug.getString("feldZiel"));
-								 if ((zug.getString("figurGeschlagen")!=null)&&(zug.getString("figurGeschlagen").length()>0))
-									 zuegeSchlagen.add(zugNeu);									 
-								 else
-									 zuege.add(zugNeu);									 
-							 }
-						 }
-					 }
-				}
-			}
-			// zufaelligen Zug durchfuehren, aber schlagen wenn moeglich
-			if (zuegeSchlagen.size()>0){
-				int zugNummer=getZufallszahl(0,zuegeSchlagen.size());
-				D_Zug zugGewaehlt=zuegeSchlagen.get(zugNummer);				
-				b.ziehe(zugGewaehlt.getString("feldStart"),zugGewaehlt.getString("feldZiel"));
-			}
-			else{
-				int zugNummer=getZufallszahl(0,zuege.size());
-				D_Zug zugGewaehlt=zuege.get(zugNummer);								
-				b.ziehe(zugGewaehlt.getString("feldStart"),zugGewaehlt.getString("feldZiel"));
-			}
+		ArrayList<D_Zug> zuegeSchlagen=new ArrayList<D_Zug>();
+
+		// zufaelligen Zug durchfuehren, aber schlagen wenn moeglich
+		if (zuegeSchlagen.size()>0){
+			int zugNummer=getZufallszahl(0,zuegeSchlagen.size());
+			D_Zug zugGewaehlt=zuegeSchlagen.get(zugNummer);				
+			b.ziehe(zugGewaehlt.getString("von"),zugGewaehlt.getString("nach"));
+		}
+		else{
+			int zugNummer=getZufallszahl(0,zuege.size());
+			D_Zug zugGewaehlt=(D_Zug)zuege.get(zugNummer);								
+			b.ziehe(zugGewaehlt.getString("von"),zugGewaehlt.getString("nach"));
 		}
 	}
 

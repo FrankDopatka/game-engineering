@@ -59,5 +59,4 @@ public class BackendSpielAdminStub implements iBackendSpielAdmin{
 			return null;
 		}
 	}
-
 }

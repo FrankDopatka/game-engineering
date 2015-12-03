@@ -1,21 +1,13 @@
 package schach.interfaces;
 
 public interface iBackendSpiel {
-	Object getBildWeiss();
-	Object getBildSchwarz();
-	Object getBildHistorie(boolean sichtVonWeiss,int zugNummer,boolean zugVonWeiss);
-	
-	String getAlleFiguren();
-	String getFigurenAufFeld(boolean weiss);
-	String getGeschlageneFiguren(boolean weiss);
-	String getFigur(String feld);
-	String getKoenig(boolean weiss);
-	String getErlaubteZuege(String feld);
-	
-	String ziehe(String feldVon,String feldNach);
-	String bauerUmwandlung(String zuFigur);
-	
 	String getSpielDaten();
+	String getAktuelleBelegung();
+	String getBelegung(int nummer);
+	String getAlleErlaubtenZuege();
+	String getFigur(String position);
+	String getErlaubteZuege(String position);
+	String ziehe(String von,String nach);
+	String bauernUmwandlung(String zuFigur);
 	String getZugHistorie();
-	String getLetzterZug();
 }
