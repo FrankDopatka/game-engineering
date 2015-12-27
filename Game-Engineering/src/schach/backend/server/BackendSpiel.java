@@ -104,7 +104,8 @@ public class BackendSpiel extends ResourceConfig implements iBackendSpiel{
 			@PathParam("position")String position) {
 		try{
 			Figur figur=spiel.getAktuelleBelegung().getFigur(position);
-			if (figur==null) throw new RuntimeException("Keine Figur auf diesem Feld!");
+//			if (figur==null) throw new RuntimeException("Keine Figur auf diesem Feld!");
+			if (figur==null) return "";
 			return Xml.verpacken(figur.toXml());
 		} catch (Exception e) {
 			return Xml.verpackeFehler(e);

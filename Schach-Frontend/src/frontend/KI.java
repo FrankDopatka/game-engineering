@@ -75,9 +75,9 @@ public abstract class KI extends Thread{
 				else{
 					// Spiel geht weiter
 					if ((d_Spiel.getInt("anzahlZuege")%2==0)==binWeiss())
-						ichBinAmZug();
+						ichBinAmZug(d_Spiel);
 					else
-						ichBinNichtZug();					
+						ichBinNichtZug(d_Spiel);					
 					schlafen(pause);				
 				}
 			} catch (Exception e) {
@@ -86,9 +86,9 @@ public abstract class KI extends Thread{
 		}
 	}
 	
-	public abstract void ichBinAmZug();
+	public abstract void ichBinAmZug(D_Spiel d_Spiel);
 	
-	public abstract void ichBinNichtZug();	
+	public abstract void ichBinNichtZug(D_Spiel d_Spiel);	
 
 	public abstract void ichHabeVerloren();	
 
@@ -102,5 +102,5 @@ public abstract class KI extends Thread{
 	
 	public Frontend getFrontend() {
 		return frontend;
-	}	
+	}
 }

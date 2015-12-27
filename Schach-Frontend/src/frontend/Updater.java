@@ -44,7 +44,7 @@ public class Updater extends Thread{
 	public void update(D_Spiel d_spiel){
 		int anzahlZuege=d_spiel.getInt("anzahlZuege");
 		Belegung b=new Belegung(backendSpiel.getAktuelleBelegung(),frontend.ichSpieleWeiss());
-		frontend.setBelegung(b.getBild()); 
+		frontend.setBelegung(b); 
 		if (b.isWeissSchachMatt()||b.isSchwarzSchachMatt()||b.isPatt()){
 			// Spiel ist zu Ende
 			if (frontend.ichSpieleWeiss()&&b.isWeissSchachMatt()) 

@@ -3,8 +3,8 @@ import java.io.IOException;
 import ki.*;
 import frontend.Frontend;
 
-public class StartClientKI001 {
+public class StartClientKI001S {
 	public static void main(String[] args) throws IOException{
-		new Frontend(Konstanten.zumServer,true,new KI001()); // false: schwarz
+		new Frontend(Konstanten.zumServer,false,new KI002()); // false: schwarz
 	}
 }

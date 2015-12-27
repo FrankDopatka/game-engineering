@@ -54,7 +54,7 @@ public class Frontend extends JFrame{
 
 	private JPanel panelBelegung=new JPanel();
 	private JLabel labelBelegung=new JLabel();
-	private BufferedImage belegungBild=null;
+	private Belegung belegung=null;
 
 	private JPanel panelHistorie=new JPanel();
 	private JScrollPane jScrollerHistorie;
@@ -176,13 +176,27 @@ public class Frontend extends JFrame{
 		new Updater(this,updateInterval);
 	}
 	
+	/*
 	public void setBelegung(BufferedImage belegungBild){
 		this.belegungBild=belegungBild;
 		updateBelegung(belegungBild);
 	}
-	
 	public void updateBelegung(Image bildNeu){
 		labelBelegung.setIcon(new ImageIcon(bildNeu));		
+	}
+	*/
+	
+	public void setBelegung(Belegung belegung){
+		this.belegung=belegung;
+		updateBelegung(belegung.getBild());
+	}
+	
+	private void updateBelegung(Image bildNeu){
+		labelBelegung.setIcon(new ImageIcon(bildNeu));		
+	}
+	
+	public Belegung getBelegung(){
+		return belegung;
 	}
 	
 	public BackendSpielStub getBackendSpiel(){
@@ -228,7 +242,7 @@ public class Frontend extends JFrame{
 		int yFeld=toArrayNotation(feldMarkiert)[1];
 		if ((xFeld==0)||(yFeld==0)) return;
 		int[] viereck=new int[4];
-		BufferedImage im=kopiereBild(belegungBild);
+		BufferedImage im=kopiereBild(belegung.getBild());
 		Graphics2D g=(Graphics2D) im.getGraphics();
 		g.setStroke(new BasicStroke(3));
 		if ((felderErlaubt!=null)&&(felderErlaubt.size()>0)){
@@ -294,7 +308,7 @@ public class Frontend extends JFrame{
 	    	 int index=((JList<String>)e.getSource()).locationToIndex(e.getPoint());
 	    	 setHistorienAnsicht(true);
 	    	 Belegung b=new Belegung(backendSpiel.getBelegung(index+1),binWeiss);
-	    	 setBelegung(b.getBild());
+	    	 setBelegung(b);
 	     }
 	  });
 		zugListe.setLayoutOrientation(JList.HORIZONTAL_WRAP);
@@ -344,7 +358,7 @@ public class Frontend extends JFrame{
 			zugListe.clearSelection();
 			weiterspielenButton.setEnabled(false);			
 			Belegung b=new Belegung(backendSpiel.getAktuelleBelegung(),binWeiss);
-   	 	setBelegung(b.getBild());
+   	 	setBelegung(b);
 		}
 		this.inHistorienAnsicht = inHistorienAnsicht;
 	}

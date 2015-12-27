@@ -47,7 +47,7 @@ public class EventHandlerBelegung implements ActionListener,MouseListener{
 			frontend.printlnLog(Xml.toD(xml).getString("meldung"));
 		}
 		Belegung b=new Belegung(backendSpiel.getAktuelleBelegung(),frontend.ichSpieleWeiss());
-		frontend.setBelegung(b.getBild());
+		frontend.setBelegung(b);
 	}
 
 	@Override
@@ -67,7 +67,7 @@ public class EventHandlerBelegung implements ActionListener,MouseListener{
 			// 2. Klick auf ein Feld: Zug durchfuehren
 			backendSpiel.ziehe(feldMarkiert,Frontend.toSchachNotation(x,y));	
 			Belegung b=new Belegung(backendSpiel.getAktuelleBelegung(),frontend.ichSpieleWeiss());
-			frontend.setBelegung(b.getBild()); 
+			frontend.setBelegung(b); 
 			reset();
 		}
 		else{

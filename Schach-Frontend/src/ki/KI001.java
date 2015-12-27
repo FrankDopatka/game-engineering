@@ -6,8 +6,11 @@ import java.util.Random;
 import backend.BackendSpielStub;
 import frontend.KI;
 import schach.daten.D;
+import schach.daten.D_Spiel;
 import schach.daten.D_Zug;
+import schach.daten.FigurEnum;
 import schach.daten.Xml;
+import schach.daten.ZugEnum;
 
 public class KI001 extends KI {
 
@@ -16,19 +19,25 @@ public class KI001 extends KI {
 	}
 
 	@Override
-	public void ichBinAmZug() {
+	public void ichBinAmZug(D_Spiel d_Spiel) {
 		BackendSpielStub b=getBackend();
-		// alle erlaubten Zuege auslesen
-		ArrayList<D> zuege=Xml.toArray(b.getAlleErlaubtenZuege());
 		
-		// zufaelligen Zug durchfuehren
-		int zugNummer=getZufallszahl(0,zuege.size());
-		D_Zug zugGewaehlt=(D_Zug)zuege.get(zugNummer);
-		b.ziehe(zugGewaehlt.getString("von"),zugGewaehlt.getString("nach"));
+		if(ZugEnum.BauerUmwandlungImGange.equals(d_Spiel.getString("bemerkung"))){
+			b.bauernUmwandlung(""+FigurEnum.Dame);
+		}
+		else{
+			// alle erlaubten Zuege auslesen
+			ArrayList<D> zuege=Xml.toArray(b.getAlleErlaubtenZuege());
+			
+			// zufaelligen Zug durchfuehren
+			int zugNummer=getZufallszahl(0,zuege.size());
+			D_Zug zugGewaehlt=(D_Zug)zuege.get(zugNummer);
+			b.ziehe(zugGewaehlt.getString("von"),zugGewaehlt.getString("nach"));			
+		}
 	}
 
 	@Override
-	public void ichBinNichtZug() {
+	public void ichBinNichtZug(D_Spiel d_Spiel) {
 		//TODO ggf. weitere Spielzuege analysieren
 	}
 	
