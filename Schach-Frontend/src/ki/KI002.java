@@ -3,13 +3,17 @@ package ki;
 import java.util.ArrayList;
 import java.util.Random;
 
+import javax.management.BadBinaryOpValueExpException;
+
 import backend.BackendSpielStub;
 import frontend.KI;
 import schach.daten.D;
 import schach.daten.D_Figur;
 import schach.daten.D_Spiel;
 import schach.daten.D_Zug;
+import schach.daten.FigurEnum;
 import schach.daten.Xml;
+import schach.daten.ZugEnum;
 
 public class KI002 extends KI {
 
@@ -20,10 +24,10 @@ public class KI002 extends KI {
 	@Override
 	public void ichBinAmZug(D_Spiel d_Spiel) {
 		BackendSpielStub b=getBackend();
+
+
 		// alle erlaubten Zuege auslesen
 		ArrayList<D> zuege=Xml.toArray(b.getAlleErlaubtenZuege());
-	//	System.out.println(zuege);
-
 		ArrayList<D_Zug> zuegeSchlagen=new ArrayList<D_Zug>();
 		for(D zug:zuege){
 			D_Zug datenZug=(D_Zug)zug;
@@ -37,7 +41,6 @@ public class KI002 extends KI {
 				}
 			}
 		}
-
 		// zufaelligen Zug durchfuehren, aber schlagen wenn moeglich
 		if (zuegeSchlagen.size()>0){
 			System.out.println("Kann schlagen!");
@@ -50,6 +53,15 @@ public class KI002 extends KI {
 			int zugNummer=getZufallszahl(0,zuege.size());
 			D_Zug zugGewaehlt=(D_Zug)zuege.get(zugNummer);								
 			b.ziehe(zugGewaehlt.getString("von"),zugGewaehlt.getString("nach"));
+		}
+		// ggf. Bauernumwandlung durchfuehren
+		schlafen(500);
+		d_Spiel=(D_Spiel)Xml.toD(b.getSpielDaten());
+		if ((d_Spiel.getInt("anzahlZuege")%2==0)==binWeiss()){
+			if(ZugEnum.BauerUmwandlungImGange.equals(d_Spiel.getString("bemerkung"))){
+				System.out.println("JA");
+				b.bauernUmwandlung(""+FigurEnum.Dame);
+			}
 		}
 	}
 
