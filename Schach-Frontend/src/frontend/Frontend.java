@@ -176,16 +176,6 @@ public class Frontend extends JFrame{
 		new Updater(this,updateInterval);
 	}
 	
-	/*
-	public void setBelegung(BufferedImage belegungBild){
-		this.belegungBild=belegungBild;
-		updateBelegung(belegungBild);
-	}
-	public void updateBelegung(Image bildNeu){
-		labelBelegung.setIcon(new ImageIcon(bildNeu));		
-	}
-	*/
-	
 	public void setBelegung(Belegung belegung){
 		this.belegung=belegung;
 		updateBelegung(belegung.getBild());

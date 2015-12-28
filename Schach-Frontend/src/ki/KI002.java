@@ -54,15 +54,6 @@ public class KI002 extends KI {
 			D_Zug zugGewaehlt=(D_Zug)zuege.get(zugNummer);								
 			b.ziehe(zugGewaehlt.getString("von"),zugGewaehlt.getString("nach"));
 		}
-		// ggf. Bauernumwandlung durchfuehren
-		schlafen(500);
-		d_Spiel=(D_Spiel)Xml.toD(b.getSpielDaten());
-		if ((d_Spiel.getInt("anzahlZuege")%2==0)==binWeiss()){
-			if(ZugEnum.BauerUmwandlungImGange.equals(d_Spiel.getString("bemerkung"))){
-				System.out.println("JA");
-				b.bauernUmwandlung(""+FigurEnum.Dame);
-			}
-		}
 	}
 
 	@Override
