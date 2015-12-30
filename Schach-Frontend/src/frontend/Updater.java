@@ -3,13 +3,11 @@ package frontend;
 import backend.BackendSpielStub;
 import schach.daten.D_Spiel;
 import schach.daten.Xml;
-import schach.daten.ZugEnum;
 
 public class Updater extends Thread{
 	private Frontend frontend;
 	private BackendSpielStub backendSpiel;
 	private int timer;
-	private boolean bauernUmwandlungImGange=false;
 	
 	public Updater(Frontend frontend,int timer){
 		this.frontend=frontend;
@@ -23,15 +21,8 @@ public class Updater extends Thread{
 		while(true){
 			try{
 				D_Spiel d_spiel=(D_Spiel)Xml.toD(backendSpiel.getSpielDaten());
-				String bemerkungSpielzug=d_spiel.getString("bemerkung");
 				if (frontend.getAnzahlZuege()!=d_spiel.getInt("anzahlZuege")){
 					update(d_spiel);
-				}
-				else if (bemerkungSpielzug.equals(""+ZugEnum.BauerUmwandlungImGange)&&(!bauernUmwandlungImGange)){
-					if (frontend.ichSpieleWeiss()==d_spiel.getBool("weissAmZug")) frontend.setBauerUmwandelnImGange();	
-					bauernUmwandlungImGange=true;
-				}else if ((bauernUmwandlungImGange)&&(bemerkungSpielzug.equals(""+ZugEnum.BauerUmwandlung))){
-					bauernUmwandlungImGange=false;
 				}
 			}
 			catch (Exception e){}

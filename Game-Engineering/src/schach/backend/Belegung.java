@@ -119,15 +119,6 @@ public class Belegung {
 	public void setFigurGeschlagen(Figur figur){
 		figurenGeschlagen.add(figur);
 	}
-	
-	public void removeBauerBeiUmwandlung(String position) {
-		Figur f=getFigur(position);
-		if ((f==null)||(!f.getTyp().equals(FigurEnum.Bauer)))
-			throw new RuntimeException("removeBauerBeiUmwandlung: Figur auf der Position ist ungueltig!");
-		daten.decInt("anzahlFigurenAufBrett");
-		int[] xy=toArrayNotation(position);
-		figurenAufBrett[xy[0]][xy[1]]=null;
-	}
 
 	public void removeBauerBeiEnPassant(String position) {
 		Figur f=getFigur(position);
@@ -253,8 +244,8 @@ public class Belegung {
 		return false;
 	}
 
-	public boolean isBauerUmwandlungImGange(String von, String nach) {
-		Figur f=getFigur(von);
+	public boolean isBauerUmwandlungImGange(String nach) {
+		Figur f=getFigur(nach);
 		if (f==null) return false;
 		if (FigurEnum.Bauer.equals(f.getTyp())){
 			int y=toArrayNotation(nach)[1];

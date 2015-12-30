@@ -8,6 +8,5 @@ public interface iBackendSpiel {
 	String getFigur(String position);
 	String getErlaubteZuege(String position);
 	String ziehe(String von,String nach);
-	String bauernUmwandlung(String zuFigur);
 	String getZugHistorie();
 }

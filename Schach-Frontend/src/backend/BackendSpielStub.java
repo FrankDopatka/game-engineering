@@ -68,11 +68,6 @@ public class BackendSpielStub implements iBackendSpiel{
 	public String ziehe(String von,String nach) {
 		return getXmlvonRest("ziehe/"+von+"/"+nach);
 	}
-	
-	@Override
-	public String bauernUmwandlung(String zuFigur) {
-		return getXmlvonRest("bauernUmwandlung/"+zuFigur);
-	}
 
 	@Override
 	public String getZugHistorie() {

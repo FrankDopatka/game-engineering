@@ -27,8 +27,7 @@ public class Xml {
 			d.setProperties(p);
 			return d;
 		} catch (Exception e) {
-			e.printStackTrace();
-			throw new RuntimeException("Xml toD: "+e.getMessage());
+			return null;
 		}
 	}
 	
@@ -98,7 +97,6 @@ public class Xml {
 	}
 	
 	public static String verpackeFehler(Exception e){
-		System.out.println(e.getMessage());
 		return Xml.verpacken(Xml.fromD(new D_Fehler(e.getMessage())));
 	}
 	

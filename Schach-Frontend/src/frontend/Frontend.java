@@ -24,7 +24,6 @@ import javax.swing.JList;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
@@ -35,7 +34,6 @@ import javax.swing.SwingConstants;
 import backend.BackendSpielAdminStub;
 import backend.BackendSpielStub;
 import schach.daten.D;
-import schach.daten.FigurEnum;
 import schach.daten.Xml;
 
 public class Frontend extends JFrame{
@@ -273,12 +271,6 @@ public class Frontend extends JFrame{
 		mVerwaltung.add(mVerwaltungEinstellungen); mVerwaltungEinstellungen.addActionListener(events);
 		mVerwaltung.add(mVerwaltungInfo); mVerwaltungInfo.addActionListener(events);
 		menu.add(mVerwaltung);
-	}
-
-	public void setBauerUmwandelnImGange() {
-		JOptionPane.showMessageDialog(this,"Der Einfachheit halber bekommen Sie eine Dame.\nNormalerweise koennen Sie zwischen Dame, Turm, Laeufer oder Springer waehlen!",
-		    "Bauernumwandlung!", JOptionPane.INFORMATION_MESSAGE);
-		backendSpiel.bauernUmwandlung(""+FigurEnum.Dame);
 	}
 
 	public void updateLog() {

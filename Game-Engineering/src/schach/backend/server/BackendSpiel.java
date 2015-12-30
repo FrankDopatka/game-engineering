@@ -104,8 +104,7 @@ public class BackendSpiel extends ResourceConfig implements iBackendSpiel{
 			@PathParam("position")String position) {
 		try{
 			Figur figur=spiel.getAktuelleBelegung().getFigur(position);
-//			if (figur==null) throw new RuntimeException("Keine Figur auf diesem Feld!");
-			if (figur==null) return "";
+			if (figur==null) throw new RuntimeException("Keine Figur auf dem Feld "+position+" vorhanden!");
 			return Xml.verpacken(figur.toXml());
 		} catch (Exception e) {
 			return Xml.verpackeFehler(e);
@@ -147,21 +146,6 @@ public class BackendSpiel extends ResourceConfig implements iBackendSpiel{
 			} catch (Exception e) {
 				return Xml.verpackeFehler(e);
 			}
-	}
-
-	@GET
-	@Path("bauernUmwandlung/{zuFigur}")
-	@Consumes("text/plain")
-	@Produces("application/xml")
-	@Override
-	public String bauernUmwandlung(
-			@PathParam("zuFigur")String zuFigur) {
-		try{
-			spiel.bauernUmwandlungAbschliessen(zuFigur);;
-			return Xml.verpackeOK("Der Bauer wurde erfolgreich umgewandelt in "+zuFigur+".");
-		} catch (Exception e) {
-			return Xml.verpackeFehler(e);
-		}
 	}
 
 	@GET

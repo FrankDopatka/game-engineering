@@ -135,90 +135,78 @@ public class Spiel {
 		return getAktuelleBelegung().isPatt(isWeissAmZug());
 	}
 	
-	public void bauernUmwandlungAbschliessen(String zuFigur){
-		Belegung b=getAktuelleBelegung();
-		if (zuFigur==null)
-			throw new RuntimeException("bauernUmwandlungAbschliessen: Es wurde keine neue Figur angegeben!");
-		if ((b.getBemerkung()==null)||(!ZugEnum.BauerUmwandlungImGange.equals(b.getBemerkung()))) 
-			throw new RuntimeException("bauernUmwandlungAbschliessen: Es ist gar keine Bauernumwandlung im Gange!");
-		if ((!zuFigur.equals(""+FigurEnum.Dame))&&(!zuFigur.equals(""+FigurEnum.Turm))&&(!zuFigur.equals(""+FigurEnum.Laeufer))&&(!zuFigur.equals(""+FigurEnum.Springer)))
-			throw new RuntimeException("bauernUmwandlungAbschliessen: Die neue Figur "+zuFigur+" ist nicht erlaubt!");
-		b.removeBauerBeiUmwandlung(b.getNach());
-		Figur fNeu=new Figur(FigurEnum.toEnumFromString(zuFigur),isWeissAmZug());
-		b.addFigur(fNeu,b.getNach());
-		ziehe(b.getVon(),b.getNach());
-	}
+
 
 	public Belegung ziehe(String von,String nach) {
 		Belegung b=getAktuelleBelegung();
 		Belegung bNeu=null;
 		Zug zNeu=null;
 		boolean isEnPassant=false;
-		
-		if ((b.getBemerkung()!=null)&&(ZugEnum.BauerUmwandlungImGange.equals(b.getBemerkung()))){
-			// Bauernumwandlung abschliessen
-			bNeu=b;
-			b.setBemerkung(ZugEnum.BauerUmwandlung);
-			zNeu=new Zug(bNeu.getDaten());
+
+		bNeu=b.clone();
+		Figur f=bNeu.getFigur(von);
+		// keine Figur zum Ziehen
+		if (f==null)
+			throw new RuntimeException("ziehe: Auf diesem Feld ist keine Figur!");
+		// Spiel ist bereits beendet
+		SpielEnum zugDavorStatus=b.getStatus();
+		if ((zugDavorStatus!=null)&&
+				(zugDavorStatus.equals(SpielEnum.WeissSchachMatt)||zugDavorStatus.equals(SpielEnum.SchwarzSchachMatt)||zugDavorStatus.equals(SpielEnum.Patt))){
+			throw new RuntimeException("ziehe: Das Spiel ist bereits zu Ende: "+zugDavorStatus);
 		}
-		else{
-			// regulärer Zug
-			bNeu=b.clone();
-			Figur f=bNeu.getFigur(von);
-			// keine Figur zum Ziehen
-			if (f==null)
-				throw new RuntimeException("ziehe: Auf diesem Feld ist keine Figur!");
-			// Spiel ist bereits beendet
-			SpielEnum zugDavorStatus=b.getStatus();
-			if ((zugDavorStatus!=null)&&
-					(zugDavorStatus.equals(SpielEnum.WeissSchachMatt)||zugDavorStatus.equals(SpielEnum.SchwarzSchachMatt)||zugDavorStatus.equals(SpielEnum.Patt))){
-				throw new RuntimeException("ziehe: Das Spiel ist bereits zu Ende: "+zugDavorStatus);
+		// ich bin nicht am Zug
+		if(f.isWeiss()!=isWeissAmZug())
+			throw new RuntimeException("ziehe: Sie sind nicht am Zug!");
+		// ist der Zug erlaubt
+		HashSet<Zug> erlaubteZuege=b.getErlaubteZuege(f.getPosition());
+		if (!erlaubteZuege.contains(new Zug(von,nach)))
+			throw new RuntimeException("ziehe: Der Zug "+f.getTyp()+" von "+von+" nach "+nach+" ist nicht erlaubt!");
+		
+		// ZIEHEN:
+		bNeu.moveFigur(f,nach);
+		// Zug registrieren in der Belegung...
+		zNeu=new Zug(von,nach);
+		
+		// Rochade
+		if (f.getTyp().equals(FigurEnum.Koenig)){
+			int xAlt=Belegung.toArrayNotation(von)[0];
+			int xNeu=Belegung.toArrayNotation(nach)[0];
+			if ((xAlt==xNeu+2)||(xAlt==xNeu-2)){
+				if (nach.equals("c1")){ // Turm mitziehen
+					bNeu.moveFigur(bNeu.getFigur("a1"),"d1");
+					zNeu.setBemerkung(ZugEnum.RochadeLang);
+				}else if (nach.equals("g1")){
+					bNeu.moveFigur(bNeu.getFigur("h1"),"f1");
+					zNeu.setBemerkung(ZugEnum.RochadeKurz);
+				}else if (nach.equals("c8")){
+					bNeu.moveFigur(bNeu.getFigur("a8"),"d8");
+					zNeu.setBemerkung(ZugEnum.RochadeLang);
+				}else{
+					bNeu.moveFigur(bNeu.getFigur("h8"),"f8");
+					zNeu.setBemerkung(ZugEnum.RochadeKurz);
+				}
 			}
-			// ich bin nicht am Zug
-			if(f.isWeiss()!=isWeissAmZug())
-				throw new RuntimeException("ziehe: Sie sind nicht am Zug!");
-			// ist der Zug erlaubt
-			HashSet<Zug> erlaubteZuege=b.getErlaubteZuege(f.getPosition());
-			if (!erlaubteZuege.contains(new Zug(von,nach)))
-				throw new RuntimeException("ziehe: Der Zug "+f.getTyp()+" von "+von+" nach "+nach+" ist nicht erlaubt!");
-			
-			// ZIEHEN:
-			bNeu.moveFigur(f,nach);
-			// Zug registrieren in der Belegung...
-			zNeu=new Zug(von,nach);
-			
-			// Rochade
-			if (f.getTyp().equals(FigurEnum.Koenig)){
+		}
+		
+		// en passant
+		if ((b.getBemerkung()!=null)&&(ZugEnum.BauerDoppelschritt.equals(b.getBemerkung()))){
+			if ((f.getTyp().equals(FigurEnum.Bauer))&&(b.getFigur(nach)==null)){
 				int xAlt=Belegung.toArrayNotation(von)[0];
 				int xNeu=Belegung.toArrayNotation(nach)[0];
-				if ((xAlt==xNeu+2)||(xAlt==xNeu-2)){
-					if (nach.equals("c1")){ // Turm mitziehen
-						bNeu.moveFigur(bNeu.getFigur("a1"),"d1");
-						zNeu.setBemerkung(ZugEnum.RochadeLang);
-					}else if (nach.equals("g1")){
-						bNeu.moveFigur(bNeu.getFigur("h1"),"f1");
-						zNeu.setBemerkung(ZugEnum.RochadeKurz);
-					}else if (nach.equals("c8")){
-						bNeu.moveFigur(bNeu.getFigur("a8"),"d8");
-						zNeu.setBemerkung(ZugEnum.RochadeLang);
-					}else{
-						bNeu.moveFigur(bNeu.getFigur("h8"),"f8");
-						zNeu.setBemerkung(ZugEnum.RochadeKurz);
-					}
+				if (xAlt!=xNeu){
+					bNeu.removeBauerBeiEnPassant(b.getNach());
+					isEnPassant=true;						
 				}
 			}
-			
-			// en passant
-			if ((b.getBemerkung()!=null)&&(ZugEnum.BauerDoppelschritt.equals(b.getBemerkung()))){
-				if ((f.getTyp().equals(FigurEnum.Bauer))&&(b.getFigur(nach)==null)){
-					int xAlt=Belegung.toArrayNotation(von)[0];
-					int xNeu=Belegung.toArrayNotation(nach)[0];
-					if (xAlt!=xNeu){
-						bNeu.removeBauerBeiEnPassant(b.getNach());
-						isEnPassant=true;						
-					}
-				}
-			}
+		}
+		
+		// Bauernumwandlung
+		if (bNeu.isBauerUmwandlungImGange(nach)){
+			bNeu.getDaten().decInt("anzahlFigurenAufBrett"); // der alte Bauer ist weg
+			Figur fNeu=new Figur(FigurEnum.Dame,isWeissAmZug());
+			bNeu.addFigur(fNeu,nach); // dafuer kommt die neue Dame hinzu
+			bNeu.setBemerkung(ZugEnum.BauerUmgewandelt);
+			zNeu.setBemerkung(ZugEnum.BauerUmgewandelt);
 		}
 
 		// Spielstatus hinzufuegen
@@ -242,18 +230,15 @@ public class Spiel {
 		}
 		// Spielbemerkung hinzufuegen
 		if (b.isBauerDoppelschritt(von,nach)) zNeu.setBemerkung(ZugEnum.BauerDoppelschritt);
-		if (b.isBauerUmwandlungImGange(von,nach)) zNeu.setBemerkung(ZugEnum.BauerUmwandlungImGange);
 		if (isEnPassant) zNeu.setBemerkung(ZugEnum.EnPassant);
-
-		if (!ZugEnum.BauerUmwandlung.equals(zNeu.getBemerkung())){
-			bNeu.setZugDavor(zNeu);
-			belegungen.add(bNeu);			
-		}
-		if (!ZugEnum.BauerUmwandlungImGange.equals(zNeu.getBemerkung())) daten.incInt("anzahlZuege");
 		
 		// Spieldaten aktualisieren
+		bNeu.setZugDavor(zNeu);
+		belegungen.add(bNeu);
+		daten.incInt("anzahlZuege");
 		daten.setString("bemerkung",""+zNeu.getBemerkung());
 		daten.setString("status",""+zNeu.getStatus());
+
 		return bNeu;	
 	}
 	
@@ -308,7 +293,7 @@ public class Spiel {
 			s+="x";
 		s+=bNachher.getNach();
 		
-		if ((zugBemerkung!=null)&&(ZugEnum.BauerUmwandlung.equals(zugBemerkung)))
+		if ((zugBemerkung!=null)&&(ZugEnum.BauerUmgewandelt.equals(zugBemerkung)))
 			s+=bNachher.getFigur(bNachher.getNach()).getKuerzel();
 		else if ((zugBemerkung!=null)&&(ZugEnum.EnPassant.equals(zugBemerkung)))
 			s+=" e.p.";
