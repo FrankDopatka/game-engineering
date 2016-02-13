@@ -1,9 +1,15 @@
 package backend;
 
+import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.core.Form;
+import javax.ws.rs.core.MediaType;
+
+import org.glassfish.jersey.internal.util.Base64;
 
 import ru.interfaces.iBackendKarteneditor;
 
@@ -23,10 +29,20 @@ public class BackendKarteneditorStub implements iBackendKarteneditor{
 		String s=client.target(url+pfad).request().accept("application/xml").get(String.class);
 		return s;
 	}
+	
+	private String postXmlvonRest(String methode,String post){
+		Form form = new Form();
+		form.param("daten", post);
+		
+		String s= client.target(url+methode).request().accept("application/x-www-form-urlencoded")
+    .post(Entity.entity(form,"application/x-www-form-urlencoded"),
+        String.class);
+		return s;
+	}
 
 	@Override
-	public String neueKarte(int id,int x,int y,String kartenArt,String feldArt){
-		return getXmlvonRest("neueKarte"+"/"+id+"/"+x+"/"+y+"/"+kartenArt+"/"+feldArt);
+	public String neueKarte(String name,int id,int x,int y,String kartenArt,String feldArt, int refKartenID,String globusArt){
+		return getXmlvonRest("neueKarte"+"/"+name+"/"+id+"/"+x+"/"+y+"/"+kartenArt+"/"+feldArt+"/"+refKartenID+"/"+globusArt);
 	}
 	
 	@Override
@@ -78,8 +94,20 @@ public class BackendKarteneditorStub implements iBackendKarteneditor{
 		return getXmlvonRest("getKartenDaten");
 	}
 
+	//refKartenID eingefügt zum Verweisen auf eine andere Karte
 	@Override
-	public String setFeldArt(int x,int y,String feldArtNeu) {
+	public String setFeldArt(int refKartenID, int x,int y,String feldArtNeu) {
+		return getXmlvonRest("setFeldArt"+"/"+refKartenID+"/"+x+"/"+y+"/"+feldArtNeu);
+	}
+	
+	//refKartenID für die WurmlochID und wurmlochIdBiDirektional für verweiß auf ein anderes wurmloch
+	@Override
+	public String setFeldArt(int refKartenID, int x,int y,String feldArtNeu,int zielX,int zielY, int wurmlochIdBiDirektional) {
+		return getXmlvonRest("setFeldArt"+"/"+refKartenID+"/"+x+"/"+y+"/"+feldArtNeu+"/"+zielX+"/"+zielY+"/"+wurmlochIdBiDirektional);
+	}
+	
+	@Override
+	public String setFeldArt(int x, int y, String feldArtNeu) {
 		return getXmlvonRest("setFeldArt"+"/"+x+"/"+y+"/"+feldArtNeu);
 	}
 
@@ -102,4 +130,29 @@ public class BackendKarteneditorStub implements iBackendKarteneditor{
 	public String delRessource(int x,int y) {
 		return getXmlvonRest("delRessource"+"/"+x+"/"+y);
 	}
+
+	//Speichert das gesamte Universum durch eine Post übergabe aller Karten im Universum in XML format
+	@Override
+	public String speichernUniversum(String daten){
+		try {
+			return postXmlvonRest("speichernUniversum",daten);
+	} catch (Exception e) {
+		return "";
+	}
+	}
+	
+	@Override
+	public String ladenUniversum(int id){
+		try {
+			return getXmlvonRest("ladenUniversum"+"/"+id);
+		} catch (Exception e) {
+			return "";
+		}
+	}
+
+	@Override
+	public String auswahlUniversum() {
+		return getXmlvonRest("auswahlUniversum");
+	}
+
 }

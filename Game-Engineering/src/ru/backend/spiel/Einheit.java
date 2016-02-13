@@ -22,13 +22,13 @@ public abstract class Einheit {
 	public int getPosX(){
 		return d_einheit.getInt("x");
 	}
-	public void getPosX(int x){
+	public void setPosX(int x){
 		d_einheit.setInt("x",x);
 	}
 	public int getPosY(){
 		return d_einheit.getInt("y");
 	}
-	public void getPosY(int y){
+	public void setPosY(int y){
 		d_einheit.setInt("y",y);
 	}
 	

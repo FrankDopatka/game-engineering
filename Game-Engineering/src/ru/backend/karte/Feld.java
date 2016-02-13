@@ -91,6 +91,42 @@ public abstract class Feld {
 		return d_Feld;
 	}
 	
+	//Setze die Wurmloch ID Referenc
+	public void setRefIdWurmloch(int id){
+		d_Feld.setInt("biDirektional", id);
+	}
+	
+	//Gebe die Wurmloch Referenc ID zurück
+	public int getRefIdWurmloch(){
+	return d_Feld.getInt("biDirektional");
+	}
+	
+//Setze die Wurmloch ID Referenc
+	public void setZielKoorodinaten(int x,int y){
+		d_Feld.setInt("xZiel", x);
+		d_Feld.setInt("yZiel", y);
+	}
+	
+	// Setze die Karten ID Referenc
+	public void setRefIDKarte(int id){
+		d_Feld.setInt("refKarte", id);
+	}
+	
+	// Setze die Karten ID
+	public void setIDKarte(int id){
+		d_Feld.setInt("idKarte", id);
+	}
+	
+//Gebe die Karten Referenc ID zurück
+	public int getRefIDKarte(int id){
+		return d_Feld.getInt("refKarte");
+	}
+	
+//Gebe die Karten Referenc ID zurück
+	public int getIDKarte(int id){
+		return d_Feld.getInt("idKarte");
+	}
+	
 	public void setEinheit(Einheit einheit){
 		if (einheit!=null){
 			einheit.getDaten().setInt("idKarte",d_Feld.getInt("idKarte"));

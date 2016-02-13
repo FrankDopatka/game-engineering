@@ -1,0 +1,1715 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://www.frankdopatka.de/dtd/propertiesarray.dtd">
+<propertiesarray>
+<properties>
+<entry key="x">10</entry>
+<entry key="name">StarWars</entry>
+<entry key="kartenArt">Weltraum</entry>
+<entry key="idZielkarte">0</entry>
+<entry key="globusArt">Weltraum</entry>
+<entry key="klasse">D_Karte</entry>
+<entry key="y">10</entry>
+<entry key="id">1</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">1</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">2</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">EisMond</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">4</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">SteppePlanet</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">2</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">3</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">4</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">5</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">6</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">DschungelPlanet</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">1</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">7</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">WasserPlanet</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">3</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">8</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">9</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">1</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">ErdPlanet</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">2</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">5</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">3</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">4</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">5</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">6</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">7</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">8</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">9</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+<properties>
+<entry key="id">0</entry>
+<entry key="feldArt">Leere</entry>
+<entry key="zielY">0</entry>
+<entry key="zielX">0</entry>
+<entry key="bewegungspunkte">100</entry>
+<entry key="ressource"/>
+<entry key="y">10</entry>
+<entry key="klasse">D_Feld</entry>
+<entry key="idKarte">1</entry>
+<entry key="refKarte">0</entry>
+<entry key="globusArt"/>
+<entry key="x">10</entry>
+<entry key="spielerstart">0</entry>
+<entry key="biDirektional">0</entry>
+<entry key="istWasserfeld">false</entry>
+</properties>
+</propertiesarray>
+

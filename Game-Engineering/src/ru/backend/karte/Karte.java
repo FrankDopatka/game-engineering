@@ -86,6 +86,22 @@ public abstract class Karte {
 	public int getId(){
 		return d_Karte.getInt("id");
 	}
+	
+	public void setIdZielkarte(int id){
+		d_Karte.setInt("idZielkarte",id);
+	}
+	
+	public int getIdZielkarte(){
+		return d_Karte.getInt("idZielkarte");
+	}
+	public void setName(String name){
+		d_Karte.setString("name", name);
+	}
+	
+	public String getName(){
+		return d_Karte.getString("name");
+	}
+	
 	public void setGroesse(int[] pos){
 		if ((pos==null)||(pos.length!=2)||(pos[0]<1)||(pos[1]<1))
 			throw new RuntimeException("Karte setGroesse: Wert für die x/y-Koordinaten ist ungueltig!");
@@ -108,6 +124,13 @@ public abstract class Karte {
 	public String getArt(){
 		return d_Karte.getString("kartenArt");
 	}
+	
+	public void setGlobus(String globusArt){
+		d_Karte.setString("globusArt",globusArt);
+	}
+	public String getGlobus(){
+		return d_Karte.getString("globusArt");
+	}
 
 	public void setDaten(D_Karte daten){
 		d_Karte=daten;
@@ -129,19 +152,50 @@ public abstract class Karte {
 		if ((pos==null)||(pos.length!=2)) return;
 		setFeld(idKarte,pos[0],pos[1],feldArt,ressource,spielerstart);
 	}
+	
+	public void setFeld(int idKarte,int[] pos,String feldArt,String ressource,int spielerstart,int refIdKarte){
+		if ((pos==null)||(pos.length!=2)) return;
+		setFeld(idKarte,pos[0],pos[1],feldArt,ressource,spielerstart);
+		felder[pos[0]][pos[01]].setRefIDKarte(refIdKarte);
+	}
 
 	public void setFeld(int idKarte,int x,int y,String feldArt,String ressource,int spielerstart){
 		if (!getErlaubteFeldArten().existValue(feldArt))
 			throw new RuntimeException("Karte setFeld: "+feldArt+" ist in dieser Karte nicht erlaubt!");
 		try {
-			@SuppressWarnings("unchecked")
-			Class<Feld> c=(Class<Feld>)Class.forName(Parameter.pfadKlassenFelder+feldArt); // Reflection
+			Class<Feld> c;
+			if(getArt().equals("Weltraum")){
+				c=(Class<Feld>)Class.forName(Parameter.pfadKlassenFelderUniversum+feldArt); // Reflection
+			}else{
+				c=(Class<Feld>)Class.forName(Parameter.pfadKlassenFelderPlaneten+feldArt); // Reflection
+			}
 			Feld feld=(Feld)c.newInstance();
 			feld.setIdKarte(idKarte);
 			feld.setArt(feldArt);
-			feld.setRessource(ressource);
-			feld.setSpielerstart(spielerstart);
+			if(!getArt().equals("Weltraum")){
+				feld.setRessource(ressource);
+				feld.setSpielerstart(spielerstart);
+			}
 			feld.setPos(x,y);
+			felder[x][y]=feld;
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("Karte setFeld: "+e.getMessage());
+		}	
+	}
+	
+	public void setFeldWurmloch(int idKarte,int x,int y,String feldArt,int zielX, int zielY, int wurmlochIdBiDirektional){
+		if (!getErlaubteFeldArten().existValue(feldArt))
+			throw new RuntimeException("Karte setFeld: "+feldArt+" ist in dieser Karte nicht erlaubt!");
+		try {
+			@SuppressWarnings("unchecked")
+			Class<Feld> c=(Class<Feld>)Class.forName(Parameter.pfadKlassenFelderUniversum+feldArt); // Reflection
+			Feld feld=(Feld)c.newInstance();
+			feld.setIdKarte(idKarte);
+			feld.setArt(feldArt);
+			feld.setPos(x,y);
+			feld.setZielKoorodinaten(zielX, zielY);
+			feld.setRefIdWurmloch(wurmlochIdBiDirektional);
 			felder[x][y]=feld;
 		} catch (Exception e) {
 			e.printStackTrace();

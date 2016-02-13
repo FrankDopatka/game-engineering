@@ -1,10 +1,15 @@
 package frontend;
 
+import frontend.karte.Karte;
+import frontend.karte.Universum;
 import frontend.menu.FunktionenAdmin;
 import frontend.menu.FunktionenKarteneditor;
-import frontend.menu.MenuRechts;
 import frontend.menu.MenuTop;
+import frontend.menu.rechts.MenuRechts;
+import frontend.menu.rechts.MenuRechtsUniversum;
+import ru.backend.Parameter;
 import ru.daten.D;
+import ru.daten.D_Feld;
 import ru.daten.D_Karte;
 import ru.daten.Xml;
 import ru.interfaces.iBackendKarteneditor;
@@ -33,14 +38,17 @@ public class Frontend extends JFrame{
 	private JTextArea ta=new JTextArea(6,20);
 	private JTextField st=new JTextField("");
 	private JScrollPane scrollerKarte;
-	private Karte karte;
+	private Universum universum; // Universums Karte wird erzeugt
+	private ArrayList<Karte> karte;
 	private int spielfeldGroesse=50;
 	private int zoomfaktor=100;
 	private FunktionenAdmin funktionenAdmin;
 	private FunktionenKarteneditor funktionenKarteneditor;
+	private String url;
 	
 	public Frontend(String url){
 		super();
+		this.url = url;
 		backendKarteneditor=new BackendKarteneditorStub(url);
 		backendSpielAdmin=new BackendSpielAdminStub(url);
 		funktionenAdmin=new FunktionenAdmin(this);
@@ -65,8 +73,12 @@ public class Frontend extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(800,600);
 		
-		setMenuRechts(new MenuRechts(this));
+//		setMenuRechts(new MenuRechtsUniversum(this));
 		setVisible(true);
+	}
+	
+	public String getUrl(){
+		return url;
 	}
 	
 	public void log(String text){
@@ -74,6 +86,10 @@ public class Frontend extends JFrame{
 			ta.setText(" "+text);
 		else
 			ta.setText(ta.getText()+"\n"+" "+text);
+	}
+	
+	public void logWarte(String text){
+		ta.setText(" "+text);
 	}
 	
 	public void setStatus(String text){
@@ -88,9 +104,10 @@ public class Frontend extends JFrame{
 		return backendSpielAdmin;
 	}
 
-	public Karte neueKarte(String backendDaten){
-		if (this.karte!=null){
-			karte.terminate();
+	// Eine nue Universums Karte wird erzeut
+	public Universum neuesUniversum(String backendDaten){
+		if (this.universum!=null){
+			universum.terminate();
 			panel.remove(scrollerKarte);
 		}
 		ArrayList<D> daten=Xml.toArray(backendDaten);
@@ -101,25 +118,47 @@ public class Frontend extends JFrame{
 		D_Karte kartenDaten=(D_Karte)daten.get(0);
 		int x=kartenDaten.getInt("x");
 		int y=kartenDaten.getInt("y");
-		this.karte=new Karte(this,x,y);
-		zeichneFelder(daten);
-		scrollerKarte=new JScrollPane(karte,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		int id=kartenDaten.getInt("id");
+		this.universum=new Universum(this,id,x,y,"Leere",kartenDaten.getString("name"));
+		zeichneFelderUniversum(daten);
+		scrollerKarte=new JScrollPane(universum,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 		panel.add(scrollerKarte,BorderLayout.CENTER);
 		panel.revalidate();
 		panel.repaint();
-		return karte;
+		return universum;
 	}
-
-	public void zeichneFelder(ArrayList<D> daten) {
+	
+	//das einladen eines Universum wenn es aus Xml Daten eingelesen wird
+	public Universum ladeUniversum(Universum newUniversum,ArrayList<D> daten){
+		if (this.universum!=null){
+			universum.terminate();
+			panel.remove(scrollerKarte);
+		}
+		this.universum=newUniversum;
+		int i;
+		for (i=0;i<daten.size();i++){
+			if (daten.get(i) instanceof D_Karte) break;
+		}
+		zeichneFelderUniversum(daten);
+		scrollerKarte=new JScrollPane(universum,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		panel.add(scrollerKarte,BorderLayout.CENTER);
+		panel.revalidate();
+		panel.repaint();
+		return universum;
+	}
+	
+	// zeichen Universums Karte
+	public void zeichneFelderUniversum(ArrayList<D> daten) {
 		if (daten==null){
 			String backendDaten=backendKarteneditor.getKarte();
 			daten=Xml.toArray(backendDaten);
 		}	
-		if (karte!=null) karte.zeichneFelder(daten);
+		if (universum!=null) universum.zeichneFelder(daten);
 	}
 
-	public void zeichneFeld(int[] pos) {
-		if (karte!=null) karte.zeichneFeld(pos);
+	// zeichene Universums Karte
+	public void zeichneFeldUniversum(int[] pos) {
+		if (universum!=null) universum.zeichneFeld(pos);
 	}
 	
 	public void setMenuRechts(MenuRechts mr){
@@ -135,8 +174,48 @@ public class Frontend extends JFrame{
 		return menuRechts;
 	}
 	
-	public Karte getKarte(){
+	public Universum getUniversum(){
+		return universum;
+	}
+	
+	public void setUniversum(Universum universum){
+		this.universum = universum;
+	}
+	
+	public ArrayList<Karte> getKarte(){
 		return karte;
+	}
+	
+	//setzt die ArrayList von Karten neu 
+	public void newKarteArrayList(){
+		karte = new ArrayList<Karte>();
+	}
+	
+	public void addKarte(Karte k){
+		karte.add(k);
+	}
+	
+	//Gibt eine KArte zurück an hand der ID
+	public Karte getKarteByID(int id){
+		Karte k=null;
+		for(Karte karte : this.karte){
+			if(karte.getId()==id){
+				k = karte;
+			}
+		}
+		return k;
+	}
+	
+	//Löscht einekarte
+	public void delKarte(Karte k){
+		karte.remove(k);
+	}
+	
+	// Setzt alle karten wieder aus inaktiv wenn sie grade nicht genutzt werden
+	public void inaktivKarte(){
+		for(Karte k : karte){
+				k.setAktive(false);
+		}
 	}
 	
 	public void setZoomfaktor(int x){

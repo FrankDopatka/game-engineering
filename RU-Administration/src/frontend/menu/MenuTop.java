@@ -67,8 +67,8 @@ public class MenuTop extends JMenuBar implements ActionListener{
 		if (o==menus.get("karte-generieren")){
 			// TODO Kartengenerator einbauen
 		}
-		if (o==menus.get("karte-laden")) funktionenKarteneditor.ladenKarte();
-		if (o==menus.get("karte-speichern")) funktionenKarteneditor.speichernKarte();
+		if (o==menus.get("karte-laden"))  funktionenKarteneditor.ladenUniversum();
+		if (o==menus.get("karte-speichern")) funktionenKarteneditor.speichernUniversum();
 
     if (o==menus.get("hilfe-ueber")){
     	JOptionPane.showMessageDialog(
