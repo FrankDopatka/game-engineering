@@ -1,0 +1,4438 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://www.frankdopatka.de/dtd/propertiesarray.dtd">
+<propertiesarray>
+<properties>
+<entry key="status">null</entry>
+<entry key="bemerkung">null</entry>
+<entry key="anzahlZuege">18</entry>
+<entry key="klasse">D_Spiel</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">0</entry>
+<entry key="status"/>
+<entry key="nach"/>
+<entry key="von"/>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">32</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e1</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">0</entry>
+<entry key="status"/>
+<entry key="nach">d4</entry>
+<entry key="von">d2</entry>
+<entry key="bemerkung">BauerDoppelschritt</entry>
+<entry key="anzahlFigurenAufBrett">32</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d4</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e1</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">0</entry>
+<entry key="status"/>
+<entry key="nach">f6</entry>
+<entry key="von">g8</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">32</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f6</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">d4</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e1</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">0</entry>
+<entry key="status"/>
+<entry key="nach">d5</entry>
+<entry key="von">d4</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">32</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f6</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">d5</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e1</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">1</entry>
+<entry key="status"/>
+<entry key="nach">d5</entry>
+<entry key="von">f6</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">31</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d5</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e1</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">1</entry>
+<entry key="status"/>
+<entry key="nach">f4</entry>
+<entry key="von">f2</entry>
+<entry key="bemerkung">BauerDoppelschritt</entry>
+<entry key="anzahlFigurenAufBrett">31</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d5</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">f4</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e1</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">2</entry>
+<entry key="status"/>
+<entry key="nach">f4</entry>
+<entry key="von">d5</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">30</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f4</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e1</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">2</entry>
+<entry key="status"/>
+<entry key="nach">b3</entry>
+<entry key="von">b2</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">30</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f4</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e1</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">3</entry>
+<entry key="status"/>
+<entry key="nach">e2</entry>
+<entry key="von">f4</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">29</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e1</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">4</entry>
+<entry key="status"/>
+<entry key="nach">e2</entry>
+<entry key="von">e1</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">28</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">4</entry>
+<entry key="status"/>
+<entry key="nach">g8</entry>
+<entry key="von">h8</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">28</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d1</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">4</entry>
+<entry key="status"/>
+<entry key="nach">d2</entry>
+<entry key="von">d1</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">28</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d2</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">4</entry>
+<entry key="status"/>
+<entry key="nach">e5</entry>
+<entry key="von">e7</entry>
+<entry key="bemerkung">BauerDoppelschritt</entry>
+<entry key="anzahlFigurenAufBrett">28</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e5</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d2</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">4</entry>
+<entry key="status"/>
+<entry key="nach">d4</entry>
+<entry key="von">d2</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">28</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e5</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">d4</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">5</entry>
+<entry key="status"/>
+<entry key="nach">d4</entry>
+<entry key="von">e5</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">27</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d4</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">5</entry>
+<entry key="status"/>
+<entry key="nach">c3</entry>
+<entry key="von">c2</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">27</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d4</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">c3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">6</entry>
+<entry key="status"/>
+<entry key="nach">c3</entry>
+<entry key="von">d4</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">26</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">c3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">6</entry>
+<entry key="status"/>
+<entry key="nach">b2</entry>
+<entry key="von">c1</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">26</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">c3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b2</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="anzahlFigurenGeschlagen">7</entry>
+<entry key="status"/>
+<entry key="nach">b2</entry>
+<entry key="von">c3</entry>
+<entry key="bemerkung"/>
+<entry key="anzahlFigurenAufBrett">25</entry>
+<entry key="klasse">D_Belegung</entry>
+</properties>
+<properties>
+<entry key="position">a8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b8</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d8</entry>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">e8</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f8</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g8</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">c7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">d7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h7</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b3</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">a2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">e2</entry>
+<entry key="typ">Koenig</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position">g2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h2</entry>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">a1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">b1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">f1</entry>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">g1</entry>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position">h1</entry>
+<entry key="typ">Turm</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">false</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Springer</entry>
+<entry key="isWeiss">false</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Dame</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Bauer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+<properties>
+<entry key="position"/>
+<entry key="typ">Laeufer</entry>
+<entry key="isWeiss">true</entry>
+<entry key="klasse">D_Figur</entry>
+<entry key="bereitsBewegt">true</entry>
+</properties>
+</propertiesarray>
+
